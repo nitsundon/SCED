@@ -1,0 +1,2462 @@
+[
+ {
+   "Sr.no.": 1,
+   "Generator_Name": "AA ENERGY PL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "AA ENERGY PL",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 9,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 2,
+   "Generator_Name": "AAYAN MLLP_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 16,
+   "ExBusInstalledCapacity": 14.56,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 3,
+   "Generator_Name": "AAYAN MLLP_2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 14,
+   "ExBusInstalledCapacity": 12.74,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 4,
+   "Generator_Name": "ADTPS_U1",
+   "InsgsType": "THERMAL",
+   "Company": "AEML",
+   "InstalledCapacity": 250,
+   "ExBusInstalledCapacity": 227.5,
+   "MOD_Rate": 4.1521,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 5,
+   "Generator_Name": "ADTPS_U2",
+   "InsgsType": "THERMAL",
+   "Company": "AEML",
+   "InstalledCapacity": 250,
+   "ExBusInstalledCapacity": 227.5,
+   "MOD_Rate": 4.1521,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 6,
+   "Generator_Name": "AEML_COGEN",
+   "InsgsType": "RENEWABLE",
+   "Company": "AEML_COGEN",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 7,
+   "Generator_Name": "AEML_OTHERS",
+   "InsgsType": "RENEWABLE",
+   "Company": "AEML_OTHERS",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 8,
+   "Generator_Name": "AEML_SHYDRO",
+   "InsgsType": "HYDRO",
+   "Company": "AEML_HYDRO",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 9,
+   "Generator_Name": "AEML_SOLAR",
+   "InsgsType": "RENEWABLE",
+   "Company": "AEML_SOLAR",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 10,
+   "Generator_Name": "AEML_WIND",
+   "InsgsType": "RENEWABLE",
+   "Company": "AEML_WIND",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 11,
+   "Generator_Name": "AMNS KL",
+   "InsgsType": "THERMAL",
+   "Company": "CPP",
+   "InstalledCapacity": 60,
+   "ExBusInstalledCapacity": 51,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 12,
+   "Generator_Name": "ANTONY LREPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "IPP",
+   "InstalledCapacity": 14,
+   "ExBusInstalledCapacity": 11.76,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 13,
+   "Generator_Name": "APML_U1",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 660,
+   "ExBusInstalledCapacity": 625.35,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 14,
+   "Generator_Name": "APML_U2",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 660,
+   "ExBusInstalledCapacity": 660,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 15,
+   "Generator_Name": "APML_U3",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 660,
+   "ExBusInstalledCapacity": 660,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 16,
+   "Generator_Name": "APML_U4",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 660,
+   "ExBusInstalledCapacity": 625.35,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 17,
+   "Generator_Name": "APML_U5",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 660,
+   "ExBusInstalledCapacity": 625.35,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 18,
+   "Generator_Name": "APRAAVA REPL",
+   "InsgsType": "RENEWABLE",
+   "Company": "APRAAVA RENEWABLE ENERGY PRIVATE LIMITED",
+   "InstalledCapacity": 20,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 19,
+   "Generator_Name": "ASHOK SSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 13.725,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 20,
+   "Generator_Name": "ATHANI SL SANGLI_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 14.5,
+   "ExBusInstalledCapacity": 13.05,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 21,
+   "Generator_Name": "ATHANI SL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 4.4,
+   "ExBusInstalledCapacity": 4,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 22,
+   "Generator_Name": "AUDUMBARRAOJI PSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 9.15,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 23,
+   "Generator_Name": "Avaada MHGreen PL",
+   "InsgsType": "THERMAL",
+   "Company": "Avaada_MHGreen_Private_Limited",
+   "InstalledCapacity": 20,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 24,
+   "Generator_Name": "Avaada_Energy",
+   "InsgsType": "RENEWABLE",
+   "Company": "Avaada_Energy_Pvt_Ltd",
+   "InstalledCapacity": 100,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 25,
+   "Generator_Name": "BABANRAOJI SSAIL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 25,
+   "ExBusInstalledCapacity": 22.875,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 26,
+   "Generator_Name": "BABURAO PATIL AIL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "BABURAO PATIL AIL",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.47,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 27,
+   "Generator_Name": "BALIRAJA SKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 13.575,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 28,
+   "Generator_Name": "BARAMATI AGRO SHET",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 22,
+   "ExBusInstalledCapacity": 20.2,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 29,
+   "Generator_Name": "BARAMATI AGRO SHET2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.38,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 30,
+   "Generator_Name": "BARAMATI AL KANNAD_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.56,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 31,
+   "Generator_Name": "BARAMATI AL SHETPHALGADE_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 25.4,
+   "ExBusInstalledCapacity": 23.114,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 32,
+   "Generator_Name": "BEST_COGEN",
+   "InsgsType": "RENEWABLE",
+   "Company": "BEST_COGEN",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 33,
+   "Generator_Name": "BEST_OTHERS",
+   "InsgsType": "RENEWABLE",
+   "Company": "BEST_OTHERS",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 34,
+   "Generator_Name": "BEST_SHYDRO",
+   "InsgsType": "HYDRO",
+   "Company": "BEST_HYDRO",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 35,
+   "Generator_Name": "BEST_SOLAR",
+   "InsgsType": "RENEWABLE",
+   "Company": "BEST_SOLAR",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 36,
+   "Generator_Name": "BEST_WIND",
+   "InsgsType": "THERMAL",
+   "Company": "BEST_WIND",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 37,
+   "Generator_Name": "BHAIRAVNATH SWL ALEGAON_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12.5,
+   "ExBusInstalledCapacity": 11.4375,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 38,
+   "Generator_Name": "BHAIRAVNATH SWL LAVANGI_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 13.725,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 39,
+   "Generator_Name": "BHAIRAVNATH SWL SONARI_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 14.5,
+   "ExBusInstalledCapacity": 13.2675,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 40,
+   "Generator_Name": "BHAIRAVNATH SWL VIHAL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 10.98,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 41,
+   "Generator_Name": "BHIMASHANKAR SSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 16,
+   "ExBusInstalledCapacity": 14.57,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 42,
+   "Generator_Name": "BHIMASHANKAR SSKL_2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 19,
+   "ExBusInstalledCapacity": 17.29,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 43,
+   "Generator_Name": "BHIRA_U12",
+   "InsgsType": "HYDRO",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 80,
+   "ExBusInstalledCapacity": 79.44,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 44,
+   "Generator_Name": "BHUMI GEPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "BHUMI GEPL",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 8.9,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 45,
+   "Generator_Name": "BHUSAWAL_U3",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 210,
+   "ExBusInstalledCapacity": 186.984,
+   "MOD_Rate": 4.879,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 46,
+   "Generator_Name": "BHUSAWAL_U4",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 500,
+   "ExBusInstalledCapacity": 470,
+   "MOD_Rate": 4.096,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 47,
+   "Generator_Name": "BHUSAWAL_U5",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 500,
+   "ExBusInstalledCapacity": 470,
+   "MOD_Rate": 4.096,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 48,
+   "Generator_Name": "CHANDRAPUR_U3",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 210,
+   "ExBusInstalledCapacity": 193.62,
+   "MOD_Rate": 4.245,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 49,
+   "Generator_Name": "CHANDRAPUR_U4",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 210,
+   "ExBusInstalledCapacity": 193.62,
+   "MOD_Rate": 4.245,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 50,
+   "Generator_Name": "CHANDRAPUR_U5",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 500,
+   "ExBusInstalledCapacity": 461,
+   "MOD_Rate": 4.245,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 51,
+   "Generator_Name": "CHANDRAPUR_U6",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 500,
+   "ExBusInstalledCapacity": 456.65,
+   "MOD_Rate": 4.245,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 52,
+   "Generator_Name": "CHANDRAPUR_U7",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 500,
+   "ExBusInstalledCapacity": 461,
+   "MOD_Rate": 4.245,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 53,
+   "Generator_Name": "CHANDRAPUR_U8",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 500,
+   "ExBusInstalledCapacity": 470,
+   "MOD_Rate": 3.61,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 54,
+   "Generator_Name": "CHANDRAPUR_U9",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 500,
+   "ExBusInstalledCapacity": 470,
+   "MOD_Rate": 3.61,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 55,
+   "Generator_Name": "CTRL_S_DATACENTERS",
+   "InsgsType": "RENEWABLE",
+   "Company": "CTRL S DATACENTERS LIMITED",
+   "InstalledCapacity": 100,
+   "ExBusInstalledCapacity": 60,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 56,
+   "Generator_Name": "DALMIA BSAIL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 23,
+   "ExBusInstalledCapacity": 21.3711,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 57,
+   "Generator_Name": "DAUND SPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.38,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 58,
+   "Generator_Name": "DAUND SPL_2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 64,
+   "ExBusInstalledCapacity": 58.24,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 59,
+   "Generator_Name": "DBASSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 25.7,
+   "ExBusInstalledCapacity": 23.387,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 60,
+   "Generator_Name": "DIL",
+   "InsgsType": "THERMAL",
+   "Company": "DIL",
+   "InstalledCapacity": 300,
+   "ExBusInstalledCapacity": 273,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 61,
+   "Generator_Name": "DODSON HYDRO_1",
+   "InsgsType": "HYDRO",
+   "Company": "IPP",
+   "InstalledCapacity": 34,
+   "ExBusInstalledCapacity": 33.592,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 62,
+   "Generator_Name": "DRPATANGRAO KSSSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 22,
+   "ExBusInstalledCapacity": 20.9,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 63,
+   "Generator_Name": "DSSKL",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 31.5,
+   "ExBusInstalledCapacity": 28.35,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 64,
+   "Generator_Name": "DUDHGANGA VSSK_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 20,
+   "ExBusInstalledCapacity": 18.2,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 65,
+   "Generator_Name": "DUDHGANGA VSSK_2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 9.1,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 66,
+   "Generator_Name": "DWARKADISH SKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 13.65,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 67,
+   "Generator_Name": "DY PATIL SSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 20.65,
+   "ExBusInstalledCapacity": 18.894,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 68,
+   "Generator_Name": "G_R_Krishna_Ferro_Alloys_Private_Limited",
+   "InsgsType": "RENEWABLE",
+   "Company": "G_R_Krishna_Ferro_Alloys_Private_Limited",
+   "InstalledCapacity": 2,
+   "ExBusInstalledCapacity": 2,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 69,
+   "Generator_Name": "GHATGHAR_1",
+   "InsgsType": "HYDRO",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 125,
+   "ExBusInstalledCapacity": 122.5,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 70,
+   "Generator_Name": "GHATGHAR_2",
+   "InsgsType": "HYDRO",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 125,
+   "ExBusInstalledCapacity": 122.5,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 71,
+   "Generator_Name": "GICL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 32,
+   "ExBusInstalledCapacity": 29.344,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 72,
+   "Generator_Name": "GKSEL",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 27,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 73,
+   "Generator_Name": "GOKUL SIL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.38,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 74,
+   "Generator_Name": "GREEN PSL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 16,
+   "ExBusInstalledCapacity": 14.4,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 75,
+   "Generator_Name": "GRETA EL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "IPP",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 13.5,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 76,
+   "Generator_Name": "IEPL",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 270,
+   "ExBusInstalledCapacity": 245.7,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 77,
+   "Generator_Name": "INDRESHWARSML_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 10.92,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 78,
+   "Generator_Name": "JAGRUTI SAIL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 13,
+   "ExBusInstalledCapacity": 11.83,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 79,
+   "Generator_Name": "JAIHIND SPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 14.5,
+   "ExBusInstalledCapacity": 13.2675,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 80,
+   "Generator_Name": "JAIHIND SPL_2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15.5,
+   "ExBusInstalledCapacity": 14.380001,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 81,
+   "Generator_Name": "JAYWANT SL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 9.2,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 82,
+   "Generator_Name": "JINDAL PL_U1",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 150,
+   "ExBusInstalledCapacity": 136.5,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 83,
+   "Generator_Name": "JINDAL PL_U2",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 150,
+   "ExBusInstalledCapacity": 136.5,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 84,
+   "Generator_Name": "JSMPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.0002,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 85,
+   "Generator_Name": "JSMPL_U1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 15,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 86,
+   "Generator_Name": "JSMPL_U2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 14,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 87,
+   "Generator_Name": "JSSKLH",
+   "InsgsType": "RENEWABLE",
+   "Company": "JSSKLH",
+   "InstalledCapacity": 27,
+   "ExBusInstalledCapacity": 24.705,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 88,
+   "Generator_Name": "JSWEL_U1",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 315,
+   "ExBusInstalledCapacity": 290,
+   "MOD_Rate": 4.29,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 89,
+   "Generator_Name": "JSWEL_U234",
+   "InsgsType": "THERMAL",
+   "Company": "CPP",
+   "InstalledCapacity": 945,
+   "ExBusInstalledCapacity": 870,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 90,
+   "Generator_Name": "KANCHESHWAR SL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 13.725,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 91,
+   "Generator_Name": "KARMAYOGI ATSSSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.506,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 92,
+   "Generator_Name": "KDPH",
+   "InsgsType": "HYDRO",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 36,
+   "ExBusInstalledCapacity": 35.5932,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 93,
+   "Generator_Name": "KHAPERKHEDA_U1",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 210,
+   "ExBusInstalledCapacity": 189.63,
+   "MOD_Rate": 3.699,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 94,
+   "Generator_Name": "KHAPERKHEDA_U2",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 210,
+   "ExBusInstalledCapacity": 189.63,
+   "MOD_Rate": 3.699,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 95,
+   "Generator_Name": "KHAPERKHEDA_U3",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 210,
+   "ExBusInstalledCapacity": 189.63,
+   "MOD_Rate": 3.699,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 96,
+   "Generator_Name": "KHAPERKHEDA_U4",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 210,
+   "ExBusInstalledCapacity": 189.63,
+   "MOD_Rate": 3.699,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 97,
+   "Generator_Name": "KHAPERKHEDA_U5",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 500,
+   "ExBusInstalledCapacity": 470,
+   "MOD_Rate": 3.185,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 98,
+   "Generator_Name": "KHATAV MAN TAPPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 10.98,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 99,
+   "Generator_Name": "KISANVEER SSSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 22,
+   "ExBusInstalledCapacity": 20.24,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 100,
+   "Generator_Name": "KKRJPKSSKL_U1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 10.8,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 101,
+   "Generator_Name": "KKRJPKSSKL_U2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 13.104,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 102,
+   "Generator_Name": "KORADI_U10",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 660,
+   "ExBusInstalledCapacity": 620.4,
+   "MOD_Rate": 3.124,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 103,
+   "Generator_Name": "KORADI_U6",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 210,
+   "ExBusInstalledCapacity": 187.3,
+   "MOD_Rate": 3.064,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 104,
+   "Generator_Name": "KORADI_U7",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 210,
+   "ExBusInstalledCapacity": 187.299,
+   "MOD_Rate": 3.148,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 105,
+   "Generator_Name": "KORADI_U8",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 660,
+   "ExBusInstalledCapacity": 620.4,
+   "MOD_Rate": 3.124,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 106,
+   "Generator_Name": "KORADI_U9",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 660,
+   "ExBusInstalledCapacity": 620.4,
+   "MOD_Rate": 3.124,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 107,
+   "Generator_Name": "KRANTI ADGDBLSSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 8.85,
+   "ExBusInstalledCapacity": 8.1,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 108,
+   "Generator_Name": "KRANTI ADGDBLSSKL_2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 10.85,
+   "ExBusInstalledCapacity": 9.93,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 109,
+   "Generator_Name": "KRANTI SAPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12.5,
+   "ExBusInstalledCapacity": 11.4375,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 110,
+   "Generator_Name": "KUMBHI KSSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 17.5,
+   "ExBusInstalledCapacity": 15.575,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 111,
+   "Generator_Name": "LMEL",
+   "InsgsType": "THERMAL",
+   "Company": "CPP",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 27,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 112,
+   "Generator_Name": "LMEL KONSARI_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "CPP",
+   "InstalledCapacity": 5,
+   "ExBusInstalledCapacity": 4.5,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 113,
+   "Generator_Name": "LMIL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 27.9,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 114,
+   "Generator_Name": "LOKNETE SUNDERRAOJI SSSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 22,
+   "ExBusInstalledCapacity": 20.68,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 115,
+   "Generator_Name": "LSECGIL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 16.5,
+   "ExBusInstalledCapacity": 15.18,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 116,
+   "Generator_Name": "LSECGIL_2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 13.8,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 117,
+   "Generator_Name": "MAHALAXMI VPL_1",
+   "InsgsType": "HYDRO",
+   "Company": "Mahalaxmi Vidyut Private Limited",
+   "InstalledCapacity": 5,
+   "ExBusInstalledCapacity": 4.99,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 118,
+   "Generator_Name": "MAHALAXMI VPL_2",
+   "InsgsType": "HYDRO",
+   "Company": "Mahalaxmi Vidyut Private Limited",
+   "InstalledCapacity": 5,
+   "ExBusInstalledCapacity": 4.99,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 119,
+   "Generator_Name": "MAHARASHTRA VNPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "MAHARASHTRA VNPL",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 9,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 120,
+   "Generator_Name": "MALEGAONSSK_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 21,
+   "ExBusInstalledCapacity": 19.11,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 121,
+   "Generator_Name": "MALEGAONSSK_2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 14,
+   "ExBusInstalledCapacity": 12.74,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 122,
+   "Generator_Name": "MANAS AIAIL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 13.5,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 123,
+   "Generator_Name": "MANAS AIAILU1_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 22,
+   "ExBusInstalledCapacity": 19.8,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 124,
+   "Generator_Name": "MANAS AIAILU5_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "MANAS AIAILU5",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 9,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 125,
+   "Generator_Name": "MATOSHRI LAXMI SCIL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 16,
+   "ExBusInstalledCapacity": 14.24,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 126,
+   "Generator_Name": "MO",
+   "InsgsType": "HYDRO",
+   "Company": "IPP",
+   "InstalledCapacity": 4.3,
+   "ExBusInstalledCapacity": 4.2312,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 127,
+   "Generator_Name": "Mohite IL",
+   "InsgsType": "HYDRO",
+   "Company": "IPP",
+   "InstalledCapacity": 5.7,
+   "ExBusInstalledCapacity": 5.61,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 128,
+   "Generator_Name": "MS_1",
+   "InsgsType": "GAS",
+   "Company": "CPP",
+   "InstalledCapacity": 100,
+   "ExBusInstalledCapacity": 50,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 129,
+   "Generator_Name": "MSEDCL_COGEN",
+   "InsgsType": "GAS",
+   "Company": "MSEDCL_COGEN",
+   "InstalledCapacity": 301.52,
+   "ExBusInstalledCapacity": 301.52,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 130,
+   "Generator_Name": "MSEDCL_OTHERS",
+   "InsgsType": "THERMAL",
+   "Company": "MSEDCL_OTHERS",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 131,
+   "Generator_Name": "MSEDCL_SHYDRO",
+   "InsgsType": "THERMAL",
+   "Company": "MSEDCL_SHYDRO",
+   "InstalledCapacity": 200,
+   "ExBusInstalledCapacity": 200,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 132,
+   "Generator_Name": "MSEDCL_SOLAR",
+   "InsgsType": "THERMAL",
+   "Company": "MSEDCL_SOLAR",
+   "InstalledCapacity": 500,
+   "ExBusInstalledCapacity": 500,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 133,
+   "Generator_Name": "MSEDCL_WIND",
+   "InsgsType": "THERMAL",
+   "Company": "MSEDCL_WIND",
+   "InstalledCapacity": 300,
+   "ExBusInstalledCapacity": 300,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 134,
+   "Generator_Name": "MSPGCL_1",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 660,
+   "ExBusInstalledCapacity": 614.13,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 135,
+   "Generator_Name": "MSPGCL_KOYNAHYDRO",
+   "InsgsType": "HYDRO",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 1920,
+   "ExBusInstalledCapacity": 1898.3,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 136,
+   "Generator_Name": "MSSKL",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 27.501,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 137,
+   "Generator_Name": "MUKTAI SEL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 10.98,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 138,
+   "Generator_Name": "NASHIK_U3",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 210,
+   "ExBusInstalledCapacity": 187.425,
+   "MOD_Rate": 5.117,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 139,
+   "Generator_Name": "NASHIK_U4",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 210,
+   "ExBusInstalledCapacity": 187.425,
+   "MOD_Rate": 5.117,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 140,
+   "Generator_Name": "NASHIK_U5",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 210,
+   "ExBusInstalledCapacity": 187.425,
+   "MOD_Rate": 5.117,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 141,
+   "Generator_Name": "NEERA BHIMA SSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 11.9736,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 142,
+   "Generator_Name": "NSLSL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 27.15,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 143,
+   "Generator_Name": "OLAM GACIPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 20,
+   "ExBusInstalledCapacity": 18.3,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 144,
+   "Generator_Name": "OMSAIRAM SAPL_1",
+   "InsgsType": "THERMAL",
+   "Company": "CPP",
+   "InstalledCapacity": 36.4,
+   "ExBusInstalledCapacity": 40,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 145,
+   "Generator_Name": "PANDURANG SSK_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 9.1,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 146,
+   "Generator_Name": "PANDURANG SSK_2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 9,
+   "ExBusInstalledCapacity": 8.19,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 147,
+   "Generator_Name": "PARAG AGRO FAPPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 14,
+   "ExBusInstalledCapacity": 12.74,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 148,
+   "Generator_Name": "PARAS_U3",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 250,
+   "ExBusInstalledCapacity": 226.75,
+   "MOD_Rate": 3.905,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 149,
+   "Generator_Name": "PARAS_U4",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 250,
+   "ExBusInstalledCapacity": 226.75,
+   "MOD_Rate": 3.905,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 150,
+   "Generator_Name": "PARLI_U6",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 250,
+   "ExBusInstalledCapacity": 226.75,
+   "MOD_Rate": 4.955,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 151,
+   "Generator_Name": "PARLI_U7",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 250,
+   "ExBusInstalledCapacity": 226.75,
+   "MOD_Rate": 4.955,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 152,
+   "Generator_Name": "PARLI_U8",
+   "InsgsType": "THERMAL",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 250,
+   "ExBusInstalledCapacity": 228.75,
+   "MOD_Rate": 5.031,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 153,
+   "Generator_Name": "PREL",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 27.51,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 154,
+   "Generator_Name": "PURNA SSK_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.38,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 155,
+   "Generator_Name": "RAJARAMBAPU PSSKL WT_U1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 6,
+   "ExBusInstalledCapacity": 5.49,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 156,
+   "Generator_Name": "RAJARAMBAPU PSSKL WT_U2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 6,
+   "ExBusInstalledCapacity": 5.46,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 157,
+   "Generator_Name": "RENA SSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 10.92,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 158,
+   "Generator_Name": "RENUKA SL AJINKYA",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 24,
+   "ExBusInstalledCapacity": 21.96,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 159,
+   "Generator_Name": "RIPL_U1",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 270,
+   "ExBusInstalledCapacity": 245.7,
+   "MOD_Rate": 2.9051,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 160,
+   "Generator_Name": "RIPL_U2",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 270,
+   "ExBusInstalledCapacity": 245.7,
+   "MOD_Rate": 2.9051,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 161,
+   "Generator_Name": "RIPL_U3",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 270,
+   "ExBusInstalledCapacity": 245.7,
+   "MOD_Rate": 2.9051,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 162,
+   "Generator_Name": "RIPL_U4",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 270,
+   "ExBusInstalledCapacity": 245.7,
+   "MOD_Rate": 2.9051,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 163,
+   "Generator_Name": "RIPL_U5",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 270,
+   "ExBusInstalledCapacity": 245.7,
+   "MOD_Rate": 2.9051,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 164,
+   "Generator_Name": "RPSSKL",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 28,
+   "ExBusInstalledCapacity": 25.76,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 165,
+   "Generator_Name": "SADASHIVRAO MKLSSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 11.25,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 166,
+   "Generator_Name": "SADGURU SSSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 11.016,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 167,
+   "Generator_Name": "SAIKRUPA SAIL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 40,
+   "ExBusInstalledCapacity": 36.4,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 168,
+   "Generator_Name": "SAIL",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 27.45,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 169,
+   "Generator_Name": "SAMRUDHI SL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 16,
+   "ExBusInstalledCapacity": 14.72,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 170,
+   "Generator_Name": "SANVIJAY",
+   "InsgsType": "THERMAL",
+   "Company": "CPP",
+   "InstalledCapacity": 33,
+   "ExBusInstalledCapacity": 29.7,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 171,
+   "Generator_Name": "SAR SENAPATI SGSFL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 22,
+   "ExBusInstalledCapacity": 20.13,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 172,
+   "Generator_Name": "SASPL",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 38,
+   "ExBusInstalledCapacity": 34.2,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 173,
+   "Generator_Name": "SASPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 38,
+   "ExBusInstalledCapacity": 34.2,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 174,
+   "Generator_Name": "SASWAD MSFL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 14.8,
+   "ExBusInstalledCapacity": 13.468,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 175,
+   "Generator_Name": "SBTSSKL",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 8.5,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 176,
+   "Generator_Name": "Shah_Promoters_And_Developers",
+   "InsgsType": "THERMAL",
+   "Company": "Shah_Promoters_And_Developers",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 15,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 177,
+   "Generator_Name": "SHAHU SSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 21.5,
+   "ExBusInstalledCapacity": 19.6725,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 178,
+   "Generator_Name": "SHANKAR SSK_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 20,
+   "ExBusInstalledCapacity": 18.3,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 179,
+   "Generator_Name": "SHANKARROJI PATIL SSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 19.5,
+   "ExBusInstalledCapacity": 17.6475,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 180,
+   "Generator_Name": "SHIROMANI VKSSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.56,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 181,
+   "Generator_Name": "SHRADDHA EAIPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 10.98,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 182,
+   "Generator_Name": "SHREENATH MSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 9,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 183,
+   "Generator_Name": "SHRI CHHATRAPATI SSKL BARAMATI_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.47,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 184,
+   "Generator_Name": "SHRI DUTT IPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 27.6,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 185,
+   "Generator_Name": "SHRI GAJANAN MSL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 14.9,
+   "ExBusInstalledCapacity": 13.6633,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 186,
+   "Generator_Name": "SHRIGURUDATT SL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 13.65,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 187,
+   "Generator_Name": "SHRIPATI SAPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 11.04,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 188,
+   "Generator_Name": "SIDDHANATH SML_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 23.79,
+   "ExBusInstalledCapacity": 23.79,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 189,
+   "Generator_Name": "SMS KOLHE SSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 11.04,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 190,
+   "Generator_Name": "SMSMPSSKL",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 33,
+   "ExBusInstalledCapacity": 30.096,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 191,
+   "Generator_Name": "SMSNNSSKL_U1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 16,
+   "ExBusInstalledCapacity": 14.4,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 192,
+   "Generator_Name": "SMSNNSSKL_U2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 9,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 193,
+   "Generator_Name": "SOMESHWARSSK_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.29,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 194,
+   "Generator_Name": "SRSL",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 27.45,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 195,
+   "Generator_Name": "SSSSKL",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 38,
+   "ExBusInstalledCapacity": 34.766,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 196,
+   "Generator_Name": "State Under drawl",
+   "InsgsType": "THERMAL",
+   "Company": "State Under drawl",
+   "InstalledCapacity": 1500,
+   "ExBusInstalledCapacity": 1500,
+   "MOD_Rate": 0.0001,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 197,
+   "Generator_Name": "SWARAJ GREEN PFL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 19.5,
+   "ExBusInstalledCapacity": 17.745,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 198,
+   "Generator_Name": "SWPGL_U1234",
+   "InsgsType": "THERMAL",
+   "Company": "IPP1",
+   "InstalledCapacity": 540,
+   "ExBusInstalledCapacity": 486,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 199,
+   "Generator_Name": "TEAM FERRO APL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "IPP",
+   "InstalledCapacity": 8,
+   "ExBusInstalledCapacity": 7.84,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 200,
+   "Generator_Name": "TILLARI",
+   "InsgsType": "HYDRO",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 60,
+   "ExBusInstalledCapacity": 59.28,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 201,
+   "Generator_Name": "TPCL_COGEN",
+   "InsgsType": "THERMAL",
+   "Company": "TPCL_COGEN",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 202,
+   "Generator_Name": "TPCL_HYDRO",
+   "InsgsType": "HYDRO",
+   "Company": "TATA",
+   "InstalledCapacity": 447,
+   "ExBusInstalledCapacity": 442.236,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 203,
+   "Generator_Name": "TPCL_OTHERS",
+   "InsgsType": "RENEWABLE",
+   "Company": "TPCL_OTHERS",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 204,
+   "Generator_Name": "TPCL_SHYDRO",
+   "InsgsType": "HYDRO",
+   "Company": "TPCL_SHYDRO",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 205,
+   "Generator_Name": "TPCL_SOLAR",
+   "InsgsType": "RENEWABLE",
+   "Company": "TPCL_SOLAR",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 206,
+   "Generator_Name": "TPCL_U5",
+   "InsgsType": "THERMAL",
+   "Company": "TATA",
+   "InstalledCapacity": 500,
+   "ExBusInstalledCapacity": 470,
+   "MOD_Rate": 5.712,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 207,
+   "Generator_Name": "TPCL_U7APM",
+   "InsgsType": "GAS",
+   "Company": "TATA",
+   "InstalledCapacity": 180,
+   "ExBusInstalledCapacity": 175.05,
+   "MOD_Rate": 5.05,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 208,
+   "Generator_Name": "TPCL_U7NAPM",
+   "InsgsType": "GAS",
+   "Company": "TATA",
+   "InstalledCapacity": 180,
+   "ExBusInstalledCapacity": 175.05,
+   "MOD_Rate": 11.589,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 209,
+   "Generator_Name": "TPCL_U8",
+   "InsgsType": "THERMAL",
+   "Company": "TATA",
+   "InstalledCapacity": 250,
+   "ExBusInstalledCapacity": 228.75,
+   "MOD_Rate": 5.617,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 210,
+   "Generator_Name": "TPCL_WIND",
+   "InsgsType": "THERMAL",
+   "Company": "TPCL_WIND",
+   "InstalledCapacity": 300,
+   "ExBusInstalledCapacity": 300,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 211,
+   "Generator_Name": "TSL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 27.6,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 212,
+   "Generator_Name": "TUKARAM SSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 13.725,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 213,
+   "Generator_Name": "TUML",
+   "InsgsType": "THERMAL",
+   "Company": "CPP",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 27,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 214,
+   "Generator_Name": "TUML_1",
+   "InsgsType": "THERMAL",
+   "Company": "CPP",
+   "InstalledCapacity": 30,
+   "ExBusInstalledCapacity": 27,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 215,
+   "Generator_Name": "TWENTY ONE SAIKHEDA_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 20,
+   "ExBusInstalledCapacity": 18.34,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 216,
+   "Generator_Name": "UDAGIRI SAPL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 14,
+   "ExBusInstalledCapacity": 12.74,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 217,
+   "Generator_Name": "Ultra Mega PPL",
+   "InsgsType": "THERMAL",
+   "Company": "Ultra Mega Power Private Limited",
+   "InstalledCapacity": 46,
+   "ExBusInstalledCapacity": 40,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 218,
+   "Generator_Name": "ULTRATECH_S",
+   "InsgsType": "THERMAL",
+   "Company": "ULTRATECH CEMENT LIMITED",
+   "InstalledCapacity": 71,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 219,
+   "Generator_Name": "URAN_OPENCYCLE",
+   "InsgsType": "GAS",
+   "Company": "MSPGC",
+   "InstalledCapacity": 432,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 220,
+   "Generator_Name": "URAN_STG_1",
+   "InsgsType": "GAS",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 5.219,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 221,
+   "Generator_Name": "URAN_STG_2",
+   "InsgsType": "GAS",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 432,
+   "ExBusInstalledCapacity": 419,
+   "MOD_Rate": 5.219,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 222,
+   "Generator_Name": "URAN_WHRP",
+   "InsgsType": "GAS",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 240,
+   "ExBusInstalledCapacity": 232.8,
+   "MOD_Rate": 5.219,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 223,
+   "Generator_Name": "USDPCL",
+   "InsgsType": "RENEWABLE",
+   "Company": "USDPCL",
+   "InstalledCapacity": 36,
+   "ExBusInstalledCapacity": 32.94,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 224,
+   "Generator_Name": "USTKWPCL",
+   "InsgsType": "THERMAL",
+   "Company": "COGEN",
+   "InstalledCapacity": 44,
+   "ExBusInstalledCapacity": 39.8024,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 225,
+   "Generator_Name": "UTOPIAN SL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 14.8,
+   "ExBusInstalledCapacity": 13.32,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 226,
+   "Generator_Name": "VAITARNA",
+   "InsgsType": "HYDRO",
+   "Company": "MSPGCL",
+   "InstalledCapacity": 60,
+   "ExBusInstalledCapacity": 59.46,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 227,
+   "Generator_Name": "VAYUNANDANA PL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 9.03,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 228,
+   "Generator_Name": "VEH SHRISHTI EPL",
+   "InsgsType": "THERMAL",
+   "Company": "VEH SRISHTI ENERGY PRIVATE LIMITED",
+   "InstalledCapacity": 54,
+   "ExBusInstalledCapacity": 54,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 1
+ },
+ {
+   "Sr.no.": 229,
+   "Generator_Name": "VIGHNAHAR SSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.56,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 230,
+   "Generator_Name": "VILAS SSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.6248,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 231,
+   "Generator_Name": "VISHWASRAO NSSK_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 15,
+   "ExBusInstalledCapacity": 13.65,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 232,
+   "Generator_Name": "VITHAL SSKL VENUNAGAR_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 29.8,
+   "ExBusInstalledCapacity": 27.267,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 233,
+   "Generator_Name": "VITTHAL CORPORATION LTD_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 10.92,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 234,
+   "Generator_Name": "VITTHALRAO KARKAMB_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 11.04,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 235,
+   "Generator_Name": "VPSUGARS_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 14.85,
+   "ExBusInstalledCapacity": 13.61745,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 236,
+   "Generator_Name": "VRSL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 26,
+   "ExBusInstalledCapacity": 20.0018,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 237,
+   "Generator_Name": "VSSSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 38,
+   "ExBusInstalledCapacity": 34.58,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 238,
+   "Generator_Name": "VVD MANJARA SSSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 18,
+   "ExBusInstalledCapacity": 16.38,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 239,
+   "Generator_Name": "YASHWANTRAO MKSSKL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 16,
+   "ExBusInstalledCapacity": 14.72,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 240,
+   "Generator_Name": "YEDESHWARI APL UNIT2_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 9.17,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 241,
+   "Generator_Name": "YEDESHWARI APL_1",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 12,
+   "ExBusInstalledCapacity": 10.848,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 242,
+   "Generator_Name": "YEDESHWARI APL_2",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 4,
+   "ExBusInstalledCapacity": 3.872,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 243,
+   "Generator_Name": "YEDESHWARI APL_3",
+   "InsgsType": "RENEWABLE",
+   "Company": "COGEN",
+   "InstalledCapacity": 10,
+   "ExBusInstalledCapacity": 9.17,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 244,
+   "Generator_Name": "BCIPL",
+   "InsgsType": "THERMAL",
+   "Company": "CPP",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 245,
+   "Generator_Name": "GEL",
+   "InsgsType": "THERMAL",
+   "Company": "IPP",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ },
+ {
+   "Sr.no.": 246,
+   "Generator_Name": "VINDHYACHAL HPL",
+   "InsgsType": "THERMAL",
+   "Company": "VINDHYACHAL HYDRO PRIVATE ltd",
+   "InstalledCapacity": 0,
+   "ExBusInstalledCapacity": 0,
+   "MOD_Rate": 0,
+   "MOD_Applicability": 0
+ }
+]
