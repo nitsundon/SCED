@@ -1,1 +1,74 @@
-
+[
+  {
+    "Type": "Discom",
+    "Discom_Name": "AEML"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "AEML SEEPZ LTD"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "BEST"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "BiotechSPL_H_SEZ"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "BiotechSPL_M_SEZ"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "EON_kharadi_SEZ1"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "EON_kharadi_SEZ2"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "GPEPL"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "JNPT"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "KRCIAPPL"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "LBSCML"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "MADC"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "MBPPL"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "MSEDCL"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "NUPLLP"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "RAILWAY"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "State Overdraw"
+  },
+  {
+    "Type": "Discom",
+    "Discom_Name": "TPCL"
+  }
+]
