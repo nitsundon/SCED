@@ -1,7 +1,7 @@
 [
   {
     "Type": "Generator",
-    "Generator_Name": "AA ENERGY PL_1",
+    "Name": "AA ENERGY PL_1",
     "InsgsType": "RENEWABLE",
     "Company": "AA ENERGY PL",
     "InstalledCapacity": 10,
@@ -11,7 +11,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "AAYAN MLLP_1",
+    "Name": "AAYAN MLLP_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 16,
@@ -21,7 +21,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "AAYAN MLLP_2",
+    "Name": "AAYAN MLLP_2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 14,
@@ -31,7 +31,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "ADTPS_U1",
+    "Name": "ADTPS_U1",
     "InsgsType": "THERMAL",
     "Company": "AEML",
     "InstalledCapacity": 250,
@@ -41,7 +41,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "ADTPS_U2",
+    "Name": "ADTPS_U2",
     "InsgsType": "THERMAL",
     "Company": "AEML",
     "InstalledCapacity": 250,
@@ -51,7 +51,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "AEML_COGEN",
+    "Name": "AEML_COGEN",
     "InsgsType": "RENEWABLE",
     "Company": "AEML_COGEN",
     "InstalledCapacity": 0,
@@ -61,7 +61,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "AEML_OTHERS",
+    "Name": "AEML_OTHERS",
     "InsgsType": "RENEWABLE",
     "Company": "AEML_OTHERS",
     "InstalledCapacity": 0,
@@ -71,7 +71,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "AEML_SHYDRO",
+    "Name": "AEML_SHYDRO",
     "InsgsType": "HYDRO",
     "Company": "AEML_HYDRO",
     "InstalledCapacity": 0,
@@ -81,7 +81,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "AEML_SOLAR",
+    "Name": "AEML_SOLAR",
     "InsgsType": "RENEWABLE",
     "Company": "AEML_SOLAR",
     "InstalledCapacity": 0,
@@ -91,7 +91,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "AEML_WIND",
+    "Name": "AEML_WIND",
     "InsgsType": "RENEWABLE",
     "Company": "AEML_WIND",
     "InstalledCapacity": 0,
@@ -101,7 +101,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "AMNS KL",
+    "Name": "AMNS KL",
     "InsgsType": "THERMAL",
     "Company": "CPP",
     "InstalledCapacity": 60,
@@ -111,7 +111,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "ANTONY LREPL_1",
+    "Name": "ANTONY LREPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "IPP",
     "InstalledCapacity": 14,
@@ -121,7 +121,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "APML_U1",
+    "Name": "APML_U1",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 660,
@@ -131,7 +131,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "APML_U2",
+    "Name": "APML_U2",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 660,
@@ -141,7 +141,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "APML_U3",
+    "Name": "APML_U3",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 660,
@@ -151,7 +151,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "APML_U4",
+    "Name": "APML_U4",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 660,
@@ -161,7 +161,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "APML_U5",
+    "Name": "APML_U5",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 660,
@@ -171,7 +171,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "APRAAVA REPL",
+    "Name": "APRAAVA REPL",
     "InsgsType": "RENEWABLE",
     "Company": "APRAAVA RENEWABLE ENERGY PRIVATE LIMITED",
     "InstalledCapacity": 20,
@@ -181,7 +181,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "ASHOK SSKL_1",
+    "Name": "ASHOK SSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15,
@@ -191,7 +191,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "ATHANI SL SANGLI_1",
+    "Name": "ATHANI SL SANGLI_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 14.5,
@@ -201,7 +201,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "ATHANI SL_1",
+    "Name": "ATHANI SL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 4.4,
@@ -211,7 +211,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "AUDUMBARRAOJI PSKL_1",
+    "Name": "AUDUMBARRAOJI PSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 10,
@@ -221,7 +221,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "Avaada MHGreen PL",
+    "Name": "Avaada MHGreen PL",
     "InsgsType": "THERMAL",
     "Company": "Avaada_MHGreen_Private_Limited",
     "InstalledCapacity": 20,
@@ -231,7 +231,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "Avaada_Energy",
+    "Name": "Avaada_Energy",
     "InsgsType": "RENEWABLE",
     "Company": "Avaada_Energy_Pvt_Ltd",
     "InstalledCapacity": 100,
@@ -241,7 +241,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BABANRAOJI SSAIL_1",
+    "Name": "BABANRAOJI SSAIL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 25,
@@ -251,7 +251,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BABURAO PATIL AIL_1",
+    "Name": "BABURAO PATIL AIL_1",
     "InsgsType": "RENEWABLE",
     "Company": "BABURAO PATIL AIL",
     "InstalledCapacity": 18,
@@ -261,7 +261,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BALIRAJA SKL_1",
+    "Name": "BALIRAJA SKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15,
@@ -271,7 +271,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BARAMATI AGRO SHET",
+    "Name": "BARAMATI AGRO SHET",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 22,
@@ -281,7 +281,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BARAMATI AGRO SHET2",
+    "Name": "BARAMATI AGRO SHET2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -291,7 +291,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BARAMATI AL KANNAD_1",
+    "Name": "BARAMATI AL KANNAD_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -301,7 +301,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BARAMATI AL SHETPHALGADE_1",
+    "Name": "BARAMATI AL SHETPHALGADE_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 25.4,
@@ -311,7 +311,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BEST_COGEN",
+    "Name": "BEST_COGEN",
     "InsgsType": "RENEWABLE",
     "Company": "BEST_COGEN",
     "InstalledCapacity": 0,
@@ -321,7 +321,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BEST_OTHERS",
+    "Name": "BEST_OTHERS",
     "InsgsType": "RENEWABLE",
     "Company": "BEST_OTHERS",
     "InstalledCapacity": 0,
@@ -331,7 +331,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BEST_SHYDRO",
+    "Name": "BEST_SHYDRO",
     "InsgsType": "HYDRO",
     "Company": "BEST_HYDRO",
     "InstalledCapacity": 0,
@@ -341,7 +341,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BEST_SOLAR",
+    "Name": "BEST_SOLAR",
     "InsgsType": "RENEWABLE",
     "Company": "BEST_SOLAR",
     "InstalledCapacity": 0,
@@ -351,7 +351,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BEST_WIND",
+    "Name": "BEST_WIND",
     "InsgsType": "THERMAL",
     "Company": "BEST_WIND",
     "InstalledCapacity": 0,
@@ -361,7 +361,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BHAIRAVNATH SWL ALEGAON_1",
+    "Name": "BHAIRAVNATH SWL ALEGAON_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12.5,
@@ -371,7 +371,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BHAIRAVNATH SWL LAVANGI_1",
+    "Name": "BHAIRAVNATH SWL LAVANGI_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15,
@@ -381,7 +381,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BHAIRAVNATH SWL SONARI_1",
+    "Name": "BHAIRAVNATH SWL SONARI_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 14.5,
@@ -391,7 +391,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BHAIRAVNATH SWL VIHAL_1",
+    "Name": "BHAIRAVNATH SWL VIHAL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -401,7 +401,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BHIMASHANKAR SSKL_1",
+    "Name": "BHIMASHANKAR SSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 16,
@@ -411,7 +411,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BHIMASHANKAR SSKL_2",
+    "Name": "BHIMASHANKAR SSKL_2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 19,
@@ -421,7 +421,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BHIRA_U12",
+    "Name": "BHIRA_U12",
     "InsgsType": "HYDRO",
     "Company": "MSPGCL",
     "InstalledCapacity": 80,
@@ -431,7 +431,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BHUMI GEPL_1",
+    "Name": "BHUMI GEPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "BHUMI GEPL",
     "InstalledCapacity": 10,
@@ -441,7 +441,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BHUSAWAL_U3",
+    "Name": "BHUSAWAL_U3",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 210,
@@ -451,7 +451,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BHUSAWAL_U4",
+    "Name": "BHUSAWAL_U4",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 500,
@@ -461,7 +461,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BHUSAWAL_U5",
+    "Name": "BHUSAWAL_U5",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 500,
@@ -471,7 +471,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "CHANDRAPUR_U3",
+    "Name": "CHANDRAPUR_U3",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 210,
@@ -481,7 +481,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "CHANDRAPUR_U4",
+    "Name": "CHANDRAPUR_U4",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 210,
@@ -491,7 +491,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "CHANDRAPUR_U5",
+    "Name": "CHANDRAPUR_U5",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 500,
@@ -501,7 +501,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "CHANDRAPUR_U6",
+    "Name": "CHANDRAPUR_U6",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 500,
@@ -511,7 +511,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "CHANDRAPUR_U7",
+    "Name": "CHANDRAPUR_U7",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 500,
@@ -521,7 +521,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "CHANDRAPUR_U8",
+    "Name": "CHANDRAPUR_U8",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 500,
@@ -531,7 +531,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "CHANDRAPUR_U9",
+    "Name": "CHANDRAPUR_U9",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 500,
@@ -541,7 +541,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "CTRL_S_DATACENTERS",
+    "Name": "CTRL_S_DATACENTERS",
     "InsgsType": "RENEWABLE",
     "Company": "CTRL S DATACENTERS LIMITED",
     "InstalledCapacity": 100,
@@ -551,7 +551,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "DALMIA BSAIL_1",
+    "Name": "DALMIA BSAIL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 23,
@@ -561,7 +561,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "DAUND SPL_1",
+    "Name": "DAUND SPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -571,7 +571,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "DAUND SPL_2",
+    "Name": "DAUND SPL_2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 64,
@@ -581,7 +581,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "DBASSKL_1",
+    "Name": "DBASSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 25.7,
@@ -591,7 +591,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "DIL",
+    "Name": "DIL",
     "InsgsType": "THERMAL",
     "Company": "DIL",
     "InstalledCapacity": 300,
@@ -601,7 +601,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "DODSON HYDRO_1",
+    "Name": "DODSON HYDRO_1",
     "InsgsType": "HYDRO",
     "Company": "IPP",
     "InstalledCapacity": 34,
@@ -611,7 +611,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "DRPATANGRAO KSSSKL_1",
+    "Name": "DRPATANGRAO KSSSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 22,
@@ -621,7 +621,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "DSSKL",
+    "Name": "DSSKL",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 31.5,
@@ -631,7 +631,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "DUDHGANGA VSSK_1",
+    "Name": "DUDHGANGA VSSK_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 20,
@@ -641,7 +641,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "DUDHGANGA VSSK_2",
+    "Name": "DUDHGANGA VSSK_2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 10,
@@ -651,7 +651,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "DWARKADISH SKL_1",
+    "Name": "DWARKADISH SKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15,
@@ -661,7 +661,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "DY PATIL SSKL_1",
+    "Name": "DY PATIL SSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 20.65,
@@ -671,7 +671,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "G_R_Krishna_Ferro_Alloys_Private_Limited",
+    "Name": "G_R_Krishna_Ferro_Alloys_Private_Limited",
     "InsgsType": "RENEWABLE",
     "Company": "G_R_Krishna_Ferro_Alloys_Private_Limited",
     "InstalledCapacity": 2,
@@ -681,7 +681,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "GHATGHAR_1",
+    "Name": "GHATGHAR_1",
     "InsgsType": "HYDRO",
     "Company": "MSPGCL",
     "InstalledCapacity": 125,
@@ -691,7 +691,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "GHATGHAR_2",
+    "Name": "GHATGHAR_2",
     "InsgsType": "HYDRO",
     "Company": "MSPGCL",
     "InstalledCapacity": 125,
@@ -701,7 +701,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "GICL_1",
+    "Name": "GICL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 32,
@@ -711,7 +711,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "GKSEL",
+    "Name": "GKSEL",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 30,
@@ -721,7 +721,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "GOKUL SIL_1",
+    "Name": "GOKUL SIL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -731,7 +731,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "GREEN PSL_1",
+    "Name": "GREEN PSL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 16,
@@ -741,7 +741,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "GRETA EL_1",
+    "Name": "GRETA EL_1",
     "InsgsType": "RENEWABLE",
     "Company": "IPP",
     "InstalledCapacity": 15,
@@ -751,7 +751,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "IEPL",
+    "Name": "IEPL",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 270,
@@ -761,7 +761,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "INDRESHWARSML_1",
+    "Name": "INDRESHWARSML_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -771,7 +771,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "JAGRUTI SAIL_1",
+    "Name": "JAGRUTI SAIL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 13,
@@ -781,7 +781,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "JAIHIND SPL_1",
+    "Name": "JAIHIND SPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 14.5,
@@ -791,7 +791,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "JAIHIND SPL_2",
+    "Name": "JAIHIND SPL_2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15.5,
@@ -801,7 +801,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "JAYWANT SL_1",
+    "Name": "JAYWANT SL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 10,
@@ -811,7 +811,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "JINDAL PL_U1",
+    "Name": "JINDAL PL_U1",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 150,
@@ -821,7 +821,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "JINDAL PL_U2",
+    "Name": "JINDAL PL_U2",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 150,
@@ -831,7 +831,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "JSMPL_1",
+    "Name": "JSMPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -841,7 +841,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "JSMPL_U1",
+    "Name": "JSMPL_U1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -851,7 +851,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "JSMPL_U2",
+    "Name": "JSMPL_U2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15,
@@ -861,7 +861,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "JSSKLH",
+    "Name": "JSSKLH",
     "InsgsType": "RENEWABLE",
     "Company": "JSSKLH",
     "InstalledCapacity": 27,
@@ -871,7 +871,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "JSWEL_U1",
+    "Name": "JSWEL_U1",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 315,
@@ -881,7 +881,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "JSWEL_U234",
+    "Name": "JSWEL_U234",
     "InsgsType": "THERMAL",
     "Company": "CPP",
     "InstalledCapacity": 945,
@@ -891,7 +891,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KANCHESHWAR SL_1",
+    "Name": "KANCHESHWAR SL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15,
@@ -901,7 +901,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KARMAYOGI ATSSSKL_1",
+    "Name": "KARMAYOGI ATSSSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -911,7 +911,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KDPH",
+    "Name": "KDPH",
     "InsgsType": "HYDRO",
     "Company": "MSPGCL",
     "InstalledCapacity": 36,
@@ -921,7 +921,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KHAPERKHEDA_U1",
+    "Name": "KHAPERKHEDA_U1",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 210,
@@ -931,7 +931,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KHAPERKHEDA_U2",
+    "Name": "KHAPERKHEDA_U2",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 210,
@@ -941,7 +941,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KHAPERKHEDA_U3",
+    "Name": "KHAPERKHEDA_U3",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 210,
@@ -951,7 +951,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KHAPERKHEDA_U4",
+    "Name": "KHAPERKHEDA_U4",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 210,
@@ -961,7 +961,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KHAPERKHEDA_U5",
+    "Name": "KHAPERKHEDA_U5",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 500,
@@ -971,7 +971,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KHATAV MAN TAPPL_1",
+    "Name": "KHATAV MAN TAPPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -981,7 +981,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KISANVEER SSSKL_1",
+    "Name": "KISANVEER SSSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 22,
@@ -991,7 +991,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KKRJPKSSKL_U1",
+    "Name": "KKRJPKSSKL_U1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -1001,7 +1001,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KKRJPKSSKL_U2",
+    "Name": "KKRJPKSSKL_U2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15,
@@ -1011,7 +1011,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KORADI_U10",
+    "Name": "KORADI_U10",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 660,
@@ -1021,7 +1021,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KORADI_U6",
+    "Name": "KORADI_U6",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 210,
@@ -1031,7 +1031,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KORADI_U7",
+    "Name": "KORADI_U7",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 210,
@@ -1041,7 +1041,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KORADI_U8",
+    "Name": "KORADI_U8",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 660,
@@ -1051,7 +1051,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KORADI_U9",
+    "Name": "KORADI_U9",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 660,
@@ -1061,7 +1061,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KRANTI ADGDBLSSKL_1",
+    "Name": "KRANTI ADGDBLSSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 8.85,
@@ -1071,7 +1071,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KRANTI ADGDBLSSKL_2",
+    "Name": "KRANTI ADGDBLSSKL_2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 10.85,
@@ -1081,7 +1081,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KRANTI SAPL_1",
+    "Name": "KRANTI SAPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12.5,
@@ -1091,7 +1091,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "KUMBHI KSSKL_1",
+    "Name": "KUMBHI KSSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 17.5,
@@ -1101,7 +1101,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "LMEL",
+    "Name": "LMEL",
     "InsgsType": "THERMAL",
     "Company": "CPP",
     "InstalledCapacity": 30,
@@ -1111,7 +1111,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "LMEL KONSARI_1",
+    "Name": "LMEL KONSARI_1",
     "InsgsType": "RENEWABLE",
     "Company": "CPP",
     "InstalledCapacity": 5,
@@ -1121,7 +1121,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "LMIL_1",
+    "Name": "LMIL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 30,
@@ -1131,7 +1131,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "LOKNETE SUNDERRAOJI SSSKL_1",
+    "Name": "LOKNETE SUNDERRAOJI SSSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 22,
@@ -1141,7 +1141,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "LSECGIL_1",
+    "Name": "LSECGIL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 16.5,
@@ -1151,7 +1151,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "LSECGIL_2",
+    "Name": "LSECGIL_2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15,
@@ -1161,7 +1161,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MAHALAXMI VPL_1",
+    "Name": "MAHALAXMI VPL_1",
     "InsgsType": "HYDRO",
     "Company": "Mahalaxmi Vidyut Private Limited",
     "InstalledCapacity": 5,
@@ -1171,7 +1171,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MAHALAXMI VPL_2",
+    "Name": "MAHALAXMI VPL_2",
     "InsgsType": "HYDRO",
     "Company": "Mahalaxmi Vidyut Private Limited",
     "InstalledCapacity": 5,
@@ -1181,7 +1181,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MAHARASHTRA VNPL_1",
+    "Name": "MAHARASHTRA VNPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "MAHARASHTRA VNPL",
     "InstalledCapacity": 10,
@@ -1191,7 +1191,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MALEGAONSSK_1",
+    "Name": "MALEGAONSSK_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 21,
@@ -1201,7 +1201,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MALEGAONSSK_2",
+    "Name": "MALEGAONSSK_2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 14,
@@ -1211,7 +1211,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MANAS AIAIL_1",
+    "Name": "MANAS AIAIL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15,
@@ -1221,7 +1221,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MANAS AIAILU1_1",
+    "Name": "MANAS AIAILU1_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 22,
@@ -1231,7 +1231,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MANAS AIAILU5_1",
+    "Name": "MANAS AIAILU5_1",
     "InsgsType": "RENEWABLE",
     "Company": "MANAS AIAILU5",
     "InstalledCapacity": 10,
@@ -1241,7 +1241,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MATOSHRI LAXMI SCIL_1",
+    "Name": "MATOSHRI LAXMI SCIL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 16,
@@ -1251,7 +1251,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MO",
+    "Name": "MO",
     "InsgsType": "HYDRO",
     "Company": "IPP",
     "InstalledCapacity": 4.3,
@@ -1261,7 +1261,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "Mohite IL",
+    "Name": "Mohite IL",
     "InsgsType": "HYDRO",
     "Company": "IPP",
     "InstalledCapacity": 5.7,
@@ -1271,7 +1271,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MS_1",
+    "Name": "MS_1",
     "InsgsType": "GAS",
     "Company": "CPP",
     "InstalledCapacity": 100,
@@ -1281,7 +1281,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MSEDCL_COGEN",
+    "Name": "MSEDCL_COGEN",
     "InsgsType": "GAS",
     "Company": "MSEDCL_COGEN",
     "InstalledCapacity": 301.52,
@@ -1291,7 +1291,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MSEDCL_OTHERS",
+    "Name": "MSEDCL_OTHERS",
     "InsgsType": "THERMAL",
     "Company": "MSEDCL_OTHERS",
     "InstalledCapacity": 0,
@@ -1301,7 +1301,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MSEDCL_SHYDRO",
+    "Name": "MSEDCL_SHYDRO",
     "InsgsType": "THERMAL",
     "Company": "MSEDCL_SHYDRO",
     "InstalledCapacity": 200,
@@ -1311,7 +1311,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MSEDCL_SOLAR",
+    "Name": "MSEDCL_SOLAR",
     "InsgsType": "THERMAL",
     "Company": "MSEDCL_SOLAR",
     "InstalledCapacity": 500,
@@ -1321,7 +1321,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MSEDCL_WIND",
+    "Name": "MSEDCL_WIND",
     "InsgsType": "THERMAL",
     "Company": "MSEDCL_WIND",
     "InstalledCapacity": 300,
@@ -1331,7 +1331,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MSPGCL_1",
+    "Name": "MSPGCL_1",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 660,
@@ -1341,7 +1341,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MSPGCL_KOYNAHYDRO",
+    "Name": "MSPGCL_KOYNAHYDRO",
     "InsgsType": "HYDRO",
     "Company": "MSPGCL",
     "InstalledCapacity": 1920,
@@ -1351,7 +1351,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MSSKL",
+    "Name": "MSSKL",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 30,
@@ -1361,7 +1361,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "MUKTAI SEL_1",
+    "Name": "MUKTAI SEL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -1371,7 +1371,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "NASHIK_U3",
+    "Name": "NASHIK_U3",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 210,
@@ -1381,7 +1381,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "NASHIK_U4",
+    "Name": "NASHIK_U4",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 210,
@@ -1391,7 +1391,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "NASHIK_U5",
+    "Name": "NASHIK_U5",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 210,
@@ -1401,7 +1401,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "NEERA BHIMA SSKL_1",
+    "Name": "NEERA BHIMA SSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -1411,7 +1411,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "NSLSL_1",
+    "Name": "NSLSL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 30,
@@ -1421,7 +1421,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "OLAM GACIPL_1",
+    "Name": "OLAM GACIPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 20,
@@ -1431,7 +1431,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "OMSAIRAM SAPL_1",
+    "Name": "OMSAIRAM SAPL_1",
     "InsgsType": "THERMAL",
     "Company": "CPP",
     "InstalledCapacity": 36.4,
@@ -1441,7 +1441,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "PANDURANG SSK_1",
+    "Name": "PANDURANG SSK_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 10,
@@ -1451,7 +1451,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "PANDURANG SSK_2",
+    "Name": "PANDURANG SSK_2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 9,
@@ -1461,7 +1461,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "PARAG AGRO FAPPL_1",
+    "Name": "PARAG AGRO FAPPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 14,
@@ -1471,7 +1471,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "PARAS_U3",
+    "Name": "PARAS_U3",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 250,
@@ -1481,7 +1481,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "PARAS_U4",
+    "Name": "PARAS_U4",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 250,
@@ -1491,7 +1491,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "PARLI_U6",
+    "Name": "PARLI_U6",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 250,
@@ -1501,7 +1501,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "PARLI_U7",
+    "Name": "PARLI_U7",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 250,
@@ -1511,7 +1511,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "PARLI_U8",
+    "Name": "PARLI_U8",
     "InsgsType": "THERMAL",
     "Company": "MSPGCL",
     "InstalledCapacity": 250,
@@ -1521,7 +1521,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "PREL",
+    "Name": "PREL",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 30,
@@ -1531,7 +1531,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "PURNA SSK_1",
+    "Name": "PURNA SSK_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -1541,7 +1541,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "RAJARAMBAPU PSSKL WT_U1",
+    "Name": "RAJARAMBAPU PSSKL WT_U1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 6,
@@ -1551,7 +1551,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "RAJARAMBAPU PSSKL WT_U2",
+    "Name": "RAJARAMBAPU PSSKL WT_U2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 6,
@@ -1561,7 +1561,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "RENA SSKL_1",
+    "Name": "RENA SSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -1571,7 +1571,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "RENUKA SL AJINKYA",
+    "Name": "RENUKA SL AJINKYA",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 24,
@@ -1581,7 +1581,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "RIPL_U1",
+    "Name": "RIPL_U1",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 270,
@@ -1591,7 +1591,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "RIPL_U2",
+    "Name": "RIPL_U2",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 270,
@@ -1601,7 +1601,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "RIPL_U3",
+    "Name": "RIPL_U3",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 270,
@@ -1611,7 +1611,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "RIPL_U4",
+    "Name": "RIPL_U4",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 270,
@@ -1621,7 +1621,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "RIPL_U5",
+    "Name": "RIPL_U5",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 270,
@@ -1631,7 +1631,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "RPSSKL",
+    "Name": "RPSSKL",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 28,
@@ -1641,7 +1641,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SADASHIVRAO MKLSSKL_1",
+    "Name": "SADASHIVRAO MKLSSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -1651,7 +1651,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SADGURU SSSKL_1",
+    "Name": "SADGURU SSSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -1661,7 +1661,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SAIKRUPA SAIL_1",
+    "Name": "SAIKRUPA SAIL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 40,
@@ -1671,7 +1671,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SAIL",
+    "Name": "SAIL",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 30,
@@ -1681,7 +1681,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SAMRUDHI SL_1",
+    "Name": "SAMRUDHI SL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 16,
@@ -1691,7 +1691,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SANVIJAY",
+    "Name": "SANVIJAY",
     "InsgsType": "THERMAL",
     "Company": "CPP",
     "InstalledCapacity": 33,
@@ -1701,7 +1701,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SAR SENAPATI SGSFL_1",
+    "Name": "SAR SENAPATI SGSFL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 22,
@@ -1711,7 +1711,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SASPL",
+    "Name": "SASPL",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 38,
@@ -1721,7 +1721,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SASPL_1",
+    "Name": "SASPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 38,
@@ -1731,7 +1731,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SASWAD MSFL_1",
+    "Name": "SASWAD MSFL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 14.8,
@@ -1741,7 +1741,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SBTSSKL",
+    "Name": "SBTSSKL",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 30,
@@ -1751,7 +1751,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "Shah_Promoters_And_Developers",
+    "Name": "Shah_Promoters_And_Developers",
     "InsgsType": "THERMAL",
     "Company": "Shah_Promoters_And_Developers",
     "InstalledCapacity": 15,
@@ -1761,7 +1761,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SHAHU SSKL_1",
+    "Name": "SHAHU SSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 21.5,
@@ -1771,7 +1771,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SHANKAR SSK_1",
+    "Name": "SHANKAR SSK_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 20,
@@ -1781,7 +1781,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SHANKARROJI PATIL SSKL_1",
+    "Name": "SHANKARROJI PATIL SSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 19.5,
@@ -1791,7 +1791,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SHIROMANI VKSSKL_1",
+    "Name": "SHIROMANI VKSSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -1801,7 +1801,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SHRADDHA EAIPL_1",
+    "Name": "SHRADDHA EAIPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -1811,7 +1811,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SHREENATH MSKL_1",
+    "Name": "SHREENATH MSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 10,
@@ -1821,7 +1821,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SHRI CHHATRAPATI SSKL BARAMATI_1",
+    "Name": "SHRI CHHATRAPATI SSKL BARAMATI_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -1831,7 +1831,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SHRI DUTT IPL_1",
+    "Name": "SHRI DUTT IPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 30,
@@ -1841,7 +1841,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SHRI GAJANAN MSL_1",
+    "Name": "SHRI GAJANAN MSL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 14.9,
@@ -1851,7 +1851,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SHRIGURUDATT SL_1",
+    "Name": "SHRIGURUDATT SL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15,
@@ -1861,7 +1861,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SHRIPATI SAPL_1",
+    "Name": "SHRIPATI SAPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -1871,7 +1871,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SIDDHANATH SML_1",
+    "Name": "SIDDHANATH SML_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 23.79,
@@ -1881,7 +1881,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SMS KOLHE SSKL_1",
+    "Name": "SMS KOLHE SSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -1891,7 +1891,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SMSMPSSKL",
+    "Name": "SMSMPSSKL",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 33,
@@ -1901,7 +1901,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SMSNNSSKL_U1",
+    "Name": "SMSNNSSKL_U1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 16,
@@ -1911,7 +1911,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SMSNNSSKL_U2",
+    "Name": "SMSNNSSKL_U2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 10,
@@ -1921,7 +1921,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SOMESHWARSSK_1",
+    "Name": "SOMESHWARSSK_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -1931,7 +1931,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SRSL",
+    "Name": "SRSL",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 30,
@@ -1941,7 +1941,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SSSSKL",
+    "Name": "SSSSKL",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 38,
@@ -1951,7 +1951,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "State Under drawl",
+    "Name": "State Under drawl",
     "InsgsType": "THERMAL",
     "Company": "State Under drawl",
     "InstalledCapacity": 1500,
@@ -1961,7 +1961,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SWARAJ GREEN PFL_1",
+    "Name": "SWARAJ GREEN PFL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 19.5,
@@ -1971,7 +1971,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "SWPGL_U1234",
+    "Name": "SWPGL_U1234",
     "InsgsType": "THERMAL",
     "Company": "IPP1",
     "InstalledCapacity": 540,
@@ -1981,7 +1981,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TEAM FERRO APL_1",
+    "Name": "TEAM FERRO APL_1",
     "InsgsType": "RENEWABLE",
     "Company": "IPP",
     "InstalledCapacity": 8,
@@ -1991,7 +1991,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TILLARI",
+    "Name": "TILLARI",
     "InsgsType": "HYDRO",
     "Company": "MSPGCL",
     "InstalledCapacity": 60,
@@ -2001,7 +2001,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TPCL_COGEN",
+    "Name": "TPCL_COGEN",
     "InsgsType": "THERMAL",
     "Company": "TPCL_COGEN",
     "InstalledCapacity": 0,
@@ -2011,7 +2011,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TPCL_HYDRO",
+    "Name": "TPCL_HYDRO",
     "InsgsType": "HYDRO",
     "Company": "TATA",
     "InstalledCapacity": 447,
@@ -2021,7 +2021,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TPCL_OTHERS",
+    "Name": "TPCL_OTHERS",
     "InsgsType": "RENEWABLE",
     "Company": "TPCL_OTHERS",
     "InstalledCapacity": 0,
@@ -2031,7 +2031,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TPCL_SHYDRO",
+    "Name": "TPCL_SHYDRO",
     "InsgsType": "HYDRO",
     "Company": "TPCL_SHYDRO",
     "InstalledCapacity": 0,
@@ -2041,7 +2041,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TPCL_SOLAR",
+    "Name": "TPCL_SOLAR",
     "InsgsType": "RENEWABLE",
     "Company": "TPCL_SOLAR",
     "InstalledCapacity": 0,
@@ -2051,7 +2051,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TPCL_U5",
+    "Name": "TPCL_U5",
     "InsgsType": "THERMAL",
     "Company": "TATA",
     "InstalledCapacity": 500,
@@ -2061,7 +2061,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TPCL_U7APM",
+    "Name": "TPCL_U7APM",
     "InsgsType": "GAS",
     "Company": "TATA",
     "InstalledCapacity": 180,
@@ -2071,7 +2071,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TPCL_U7NAPM",
+    "Name": "TPCL_U7NAPM",
     "InsgsType": "GAS",
     "Company": "TATA",
     "InstalledCapacity": 180,
@@ -2081,7 +2081,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TPCL_U8",
+    "Name": "TPCL_U8",
     "InsgsType": "THERMAL",
     "Company": "TATA",
     "InstalledCapacity": 250,
@@ -2091,7 +2091,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TPCL_WIND",
+    "Name": "TPCL_WIND",
     "InsgsType": "THERMAL",
     "Company": "TPCL_WIND",
     "InstalledCapacity": 300,
@@ -2101,7 +2101,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TSL_1",
+    "Name": "TSL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 30,
@@ -2111,7 +2111,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TUKARAM SSKL_1",
+    "Name": "TUKARAM SSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15,
@@ -2121,7 +2121,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TUML",
+    "Name": "TUML",
     "InsgsType": "THERMAL",
     "Company": "CPP",
     "InstalledCapacity": 30,
@@ -2131,7 +2131,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TUML_1",
+    "Name": "TUML_1",
     "InsgsType": "THERMAL",
     "Company": "CPP",
     "InstalledCapacity": 30,
@@ -2141,7 +2141,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "TWENTY ONE SAIKHEDA_1",
+    "Name": "TWENTY ONE SAIKHEDA_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 20,
@@ -2151,7 +2151,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "UDAGIRI SAPL_1",
+    "Name": "UDAGIRI SAPL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 14,
@@ -2161,7 +2161,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "Ultra Mega PPL",
+    "Name": "Ultra Mega PPL",
     "InsgsType": "THERMAL",
     "Company": "Ultra Mega Power Private Limited",
     "InstalledCapacity": 46,
@@ -2171,7 +2171,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "ULTRATECH_S",
+    "Name": "ULTRATECH_S",
     "InsgsType": "THERMAL",
     "Company": "ULTRATECH CEMENT LIMITED",
     "InstalledCapacity": 71,
@@ -2181,7 +2181,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "URAN_OPENCYCLE",
+    "Name": "URAN_OPENCYCLE",
     "InsgsType": "GAS",
     "Company": "MSPGC",
     "InstalledCapacity": 432,
@@ -2191,7 +2191,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "URAN_STG_1",
+    "Name": "URAN_STG_1",
     "InsgsType": "GAS",
     "Company": "MSPGCL",
     "InstalledCapacity": 0,
@@ -2201,7 +2201,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "URAN_STG_2",
+    "Name": "URAN_STG_2",
     "InsgsType": "GAS",
     "Company": "MSPGCL",
     "InstalledCapacity": 432,
@@ -2211,7 +2211,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "URAN_WHRP",
+    "Name": "URAN_WHRP",
     "InsgsType": "GAS",
     "Company": "MSPGCL",
     "InstalledCapacity": 240,
@@ -2221,7 +2221,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "USDPCL",
+    "Name": "USDPCL",
     "InsgsType": "RENEWABLE",
     "Company": "USDPCL",
     "InstalledCapacity": 36,
@@ -2231,7 +2231,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "USTKWPCL",
+    "Name": "USTKWPCL",
     "InsgsType": "THERMAL",
     "Company": "COGEN",
     "InstalledCapacity": 44,
@@ -2241,7 +2241,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "UTOPIAN SL_1",
+    "Name": "UTOPIAN SL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 14.8,
@@ -2251,7 +2251,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VAITARNA",
+    "Name": "VAITARNA",
     "InsgsType": "HYDRO",
     "Company": "MSPGCL",
     "InstalledCapacity": 60,
@@ -2261,7 +2261,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VAYUNANDANA PL_1",
+    "Name": "VAYUNANDANA PL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 10,
@@ -2271,7 +2271,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VEH SHRISHTI EPL",
+    "Name": "VEH SHRISHTI EPL",
     "InsgsType": "THERMAL",
     "Company": "VEH SRISHTI ENERGY PRIVATE LIMITED",
     "InstalledCapacity": 54,
@@ -2281,7 +2281,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VIGHNAHAR SSKL_1",
+    "Name": "VIGHNAHAR SSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -2291,7 +2291,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VILAS SSKL_1",
+    "Name": "VILAS SSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -2301,7 +2301,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VISHWASRAO NSSK_1",
+    "Name": "VISHWASRAO NSSK_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 15,
@@ -2311,7 +2311,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VITHAL SSKL VENUNAGAR_1",
+    "Name": "VITHAL SSKL VENUNAGAR_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 29.8,
@@ -2321,7 +2321,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VITTHAL CORPORATION LTD_1",
+    "Name": "VITTHAL CORPORATION LTD_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -2331,7 +2331,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VITTHALRAO KARKAMB_1",
+    "Name": "VITTHALRAO KARKAMB_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -2341,7 +2341,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VPSUGARS_1",
+    "Name": "VPSUGARS_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 14.85,
@@ -2351,7 +2351,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VRSL_1",
+    "Name": "VRSL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 26,
@@ -2361,7 +2361,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VSSSKL_1",
+    "Name": "VSSSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 38,
@@ -2371,7 +2371,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VVD MANJARA SSSKL_1",
+    "Name": "VVD MANJARA SSSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 18,
@@ -2381,7 +2381,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "YASHWANTRAO MKSSKL_1",
+    "Name": "YASHWANTRAO MKSSKL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 16,
@@ -2391,7 +2391,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "YEDESHWARI APL UNIT2_1",
+    "Name": "YEDESHWARI APL UNIT2_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 10,
@@ -2401,7 +2401,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "YEDESHWARI APL_1",
+    "Name": "YEDESHWARI APL_1",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 12,
@@ -2411,7 +2411,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "YEDESHWARI APL_2",
+    "Name": "YEDESHWARI APL_2",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 4,
@@ -2421,7 +2421,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "YEDESHWARI APL_3",
+    "Name": "YEDESHWARI APL_3",
     "InsgsType": "RENEWABLE",
     "Company": "COGEN",
     "InstalledCapacity": 10,
@@ -2431,7 +2431,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "BCIPL",
+    "Name": "BCIPL",
     "InsgsType": "THERMAL",
     "Company": "CPP",
     "InstalledCapacity": 0,
@@ -2441,7 +2441,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "GEL",
+    "Name": "GEL",
     "InsgsType": "THERMAL",
     "Company": "IPP",
     "InstalledCapacity": 0,
@@ -2451,7 +2451,7 @@
   },
   {
     "Type": "Generator",
-    "Generator_Name": "VINDHYACHAL HPL",
+    "Name": "VINDHYACHAL HPL",
     "InsgsType": "THERMAL",
     "Company": "VINDHYACHAL HYDRO PRIVATE ltd",
     "InstalledCapacity": 0,
