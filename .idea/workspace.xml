@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="create_sunburst.py created">
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classses/ConnectionHandler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classses/Handle_Excel_File.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/Widgets/Sidebar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/home.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/create_ip_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/create_ip_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/create_ip_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/create_ip_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/create_sunburst.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/create_sunburst.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +40,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Handle_Excel_File.executor": "Run",
+    "Python.Sidebar.executor": "Run",
+    "Python.app.executor": "Run",
     "Python.create_ip_json.executor": "Run",
+    "Python.home.executor": "Run",
+    "Python.index.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -117,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757760581556</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="create_sunburst.py created">
+      <option name="closed" value="true" />
+      <created>1757761484552</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1757761484552</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
