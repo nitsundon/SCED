@@ -2,12 +2,12 @@ import pandas as pd
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import certifi
-
+json_string={}
 df=pd.read_excel('../data/input.xlsx',skiprows=2)
 df.drop(columns="Sl/no",inplace=True)
-grouped=df.groupby("Generator_Name",)
+# Make sure NaN -> None so Mongo can store them
+df = df.where(pd.notna(df), None)
 json_string=df.to_dict(orient="records")
-
 uri = "mongodb+srv://niteshsunildongre_db_user:CAVSdrZTnNMKZGSk@cluster0.cwebq8g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 # Create a new client and connect to the server
 client = MongoClient(
@@ -27,12 +27,6 @@ db = client["sced"]
 collection = db["inputs"]
 
 # Insert data
-# collection.insert_many(json_string)
+collection.insert_one({'geninfo':json_string})
 
 
-cursor = collection.find({'MOD_Rate': {'$gt':0},'MOD_Applicability':1},{'_id':0,'Generator_Name':1,'MOD_Rate':1,'MOD_Applicability':1,'ExBusInstalledCapacity':1})   # empty filter {} = get everything
-docs = list(cursor)            # convert cursor to a list
-
-print(f"Total docs: {len(docs)}")
-df_out = pd.DataFrame(docs)
-print(df_out)
