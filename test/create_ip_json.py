@@ -38,7 +38,7 @@ df_out = pd.DataFrame(docs)
 print(df_out)
 
 import plotly.express as px
-
+import numpy as np
 # (Optional) keep only applicable rows
 df = df_out[df_out["MOD_Applicability"] == 1].copy()
 
@@ -48,7 +48,18 @@ rate_order = df.sort_values("MOD_Rate")["MOD_Rate_lbl"].unique().tolist()
 
 # (Optional) add a root
 df["All"] = "All Plants"
+# bins: <3, [3,4), [4,5], >5
+cond = [
+    df["MOD_Rate"] < 3,
+    (df["MOD_Rate"] >= 3) & (df["MOD_Rate"] < 4),
+    (df["MOD_Rate"] >= 4) & (df["MOD_Rate"] <= 5),
+    df["MOD_Rate"] > 5,
+]
+choices = ["<3", "3-4", "4-5", ">5"]
+df["Rate_Bin"] = np.select(cond, choices, default="unbinned")
+rate_order = df.sort_values("Rate_Bin")["MOD_Rate_lbl"].unique().tolist()
 
+print(df.columns)
 fig = px.sunburst(
     df,
     path=["All", "MOD_Rate_lbl", "Generator_Name"],   # hierarchy: root → rate → unit
