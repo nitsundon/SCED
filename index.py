@@ -18,7 +18,7 @@ ap.layout = html.Div([
             ], lg=2,className=" vh-100"),
             dbc.Col([
                 html.Div([
-                    "BODY"
+                    dash.page_container
                 ], className="wrapper")
             ], lg=9),
         ])

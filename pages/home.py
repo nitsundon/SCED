@@ -5,4 +5,10 @@ from dash import html
 
 dash.register_page(__name__, path="/", name="Home", order=0)
 
-layout=html.Div("Hello world")
+layout = dbc.Container([
+    dbc.Breadcrumb(items=[
+            {"label": "Home", "active": True},  # clickable link
+
+        ] ,className="p-3"),
+
+], )

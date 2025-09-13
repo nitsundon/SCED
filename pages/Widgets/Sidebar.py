@@ -19,4 +19,4 @@ def Sidebar():
         dbc.NavItem([
             dbc.NavLink(["Monitor"], href="www.google.com")
         ])
-    ],fill=True,pills=True,vertical=True)
+    ],fill=True,pills=True,vertical=True,horizontal="start",justified=False)
