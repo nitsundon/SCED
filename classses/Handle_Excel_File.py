@@ -29,3 +29,11 @@ class HandleExcelFile:
             existing = revision_collection.find_one(self.ret, {"_id": 1})
             print(existing)
             return existing['_id']
+
+    def createDict(self,group_object):
+        arr={}
+        for group_index, group_df in group_object.groupby("Generator_Name"):
+            group_df.columns = group_df.columns.map(str)
+            arr[group_index] = group_df.drop(columns="Generator_Name").to_dict(orient="records")
+
+        return arr
