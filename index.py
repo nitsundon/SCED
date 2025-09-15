@@ -2,30 +2,18 @@ import app as app
 import dash
 from dash import html
 import dash_bootstrap_components as dbc
-from pages.Widgets.Sidebar import NavBar,Sidebar
+from pages.Widgets.Sidebar import get_topbar,get_sidebar
 
 ap = app.app
-ap.layout = html.Div([
-    dbc.Container(
-        [
-            NavBar()
-        ]
-    ,fluid=True),
-    dbc.Container([
-        dbc.Row([
-            dbc.Col([
-                Sidebar()
-            ], lg=2,className=" vh-100"),
-            dbc.Col([
-                html.Div([
-                    dash.page_container
-                ], className="wrapper")
-            ], lg=9),
-        ])
+ap.layout = html.Div(
+    [
+        get_sidebar(),
+        html.Div([
+            get_topbar(),
+            dash.page_container
 
-    ], fluid=True)
-
-])
+        ],className="d-flex flex-column",id="content-wrapper")
+    ], id="wrapper")
 
 if __name__ == "__main__":
     ap.run(debug=True)

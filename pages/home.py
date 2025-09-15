@@ -6,9 +6,9 @@ from dash import html
 dash.register_page(__name__, path="/", name="Home", order=0)
 
 layout = dbc.Container([
-    dbc.Breadcrumb(items=[
-            {"label": "Home", "active": True},  # clickable link
 
-        ] ,className="p-3"),
+    html.Div([
+        html.H1(["Dashboard"],className="h3 mb-0 text-gray-800")
+    ])
 
-], )
+], fluid=True)
