@@ -35,10 +35,11 @@ class HandleExcelFile:
             print(existing)
             return existing['_id']
 
-    def createDict(self,group_object):
+    def createDict(self,group_object,col="Generator_Name"):
         arr={}
-        for group_index, group_df in group_object.groupby("Generator_Name"):
+        for group_index, group_df in group_object.groupby(col):
             group_df.columns = group_df.columns.map(str)
-            arr[group_index] = group_df.drop(columns="Generator_Name").to_dict(orient="records")
+            arr[group_index] = group_df.drop(columns=col).to_dict(orient="records")
 
         return arr
+
