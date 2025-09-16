@@ -7,6 +7,6 @@ from classses.Handle_Excel_File import HandleExcelFile
 
 json_string={}
 
-df=HandleExcelFile().createCentrePX()
+df=HandleExcelFile().getDemand()
 print(df)
 # revision_id=HandleExcelFile(file_path='../data/input.xlsx').getRevision()

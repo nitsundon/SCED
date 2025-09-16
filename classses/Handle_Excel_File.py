@@ -83,7 +83,7 @@ class HandleExcelFile:
         return self.createDict(df,"Discom_Name" )
 
     def getDemand(self):
-        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="REMC")
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="DISCOM_DEMAND_DATA")
         df.drop(columns="Sl/no", inplace=True)
         return self.createDict(df,"Discom_Name" )
 
@@ -92,3 +92,25 @@ class HandleExcelFile:
         df.drop(columns="Sl/no", inplace=True)
         return self.createDict(df, "Discom_Name")
 
+    def getStandby(self):
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="STAND_BY")
+        df.drop(columns="Sl/no", inplace=True)
+        return self.createDict(df, "Discom_Name")
+
+
+    def getIntraShare(self):
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_DISCOM_SHARE")
+        df=df.drop(columns="Sl/no")
+        df = pd.melt(df, id_vars="Generator_Name").dropna().sort_values("Generator_Name").reset_index(drop=True)
+
+        return df
+    def getIntraDC(self):
+        df=self.getIntraShare()
+        df1=pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_DC_DATA")
+
+        return df.merge(df1,on="Generator_Name")
+
+df=HandleExcelFile().getIntraDC()
+
+
+print(df.iloc[-25:])
