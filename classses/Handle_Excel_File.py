@@ -1,5 +1,8 @@
+import datetime
+
 import pandas as pd
 from classses.ConnectionHandler import MongoConnect
+from datetime import datetime
 
 
 class HandleExcelFile:
@@ -20,7 +23,9 @@ class HandleExcelFile:
     def getRevision(self):
         db = MongoConnect().getDB()
         revision_collection = db["revisions"]
-        result = revision_collection.update_one(self.ret, {"$setOnInsert": self.ret}, upsert=True)
+        where_str=self.ret
+
+        result = revision_collection.update_one(where_str, {"$setOnInsert": self.ret}, upsert=True)
         if result.upserted_id:
             # New document inserted
             return result.upserted_id

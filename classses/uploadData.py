@@ -13,13 +13,3 @@ df.drop(columns="Sl/no",inplace=True)
 df = df.where(pd.notna(df), None)
 
 revision_id=HandleExcelFile(file_path='../data/input.xlsx').getRevision()
-arr= {}
-for group_index,group_df in df.groupby("Generator_Name"):
-    group_df.columns = group_df.columns.map(str)
-    arr[group_index]=group_df.drop(columns="Generator_Name").to_dict(orient="records")
-
-
-
-db=MongoConnect().getDB()
-
-db['input'].insert_one({'revision':revision_id,'dc':arr})
