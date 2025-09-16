@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="Create Handle Excel File extract featrues">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classses/Handle_Excel_File.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/Handle_Excel_File.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classses/uploadData.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/uploadData.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +233,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758034817160</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Create Handle Excel File extract featrues">
+      <option name="closed" value="true" />
+      <created>1758035937924</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1758035937924</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Create Handle Excel File extract featrues">
+      <option name="closed" value="true" />
+      <created>1758035958369</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1758035958369</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

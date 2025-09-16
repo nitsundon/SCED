@@ -101,16 +101,21 @@ class HandleExcelFile:
     def getIntraShare(self):
         df = pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_DISCOM_SHARE")
         df=df.drop(columns="Sl/no")
-        df = pd.melt(df, id_vars="Generator_Name").dropna().sort_values("Generator_Name").reset_index(drop=True)
+        df = pd.melt(df, id_vars="Generator_Name",var_name="Discom_Name",value_name="share").dropna().sort_values("Generator_Name").reset_index(drop=True)
 
         return df
     def getIntraDC(self):
         df=self.getIntraShare()
         df1=pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_DC_DATA")
 
-        return df.merge(df1,on="Generator_Name")
+        df2=df.merge(df1,on="Generator_Name")
+
+        for col in range(1, 97):
+            df2[col] = round(df2[col] * df2['share']/100,2)
+
+        return df2
 
 df=HandleExcelFile().getIntraDC()
 
 
-print(df.iloc[-25:])
+print(df.iloc[-29:])
