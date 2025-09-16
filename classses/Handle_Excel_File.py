@@ -19,6 +19,7 @@ class HandleExcelFile:
             'revision_no': revision,
 
         }
+        self.file_path=file_path
 
     def getRevision(self):
         db = MongoConnect().getDB()
@@ -42,4 +43,52 @@ class HandleExcelFile:
             arr[group_index] = group_df.drop(columns=col).to_dict(orient="records")
 
         return arr
+
+    def getCentre(self,utility="Discom"):
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="CENTRE")
+        df.drop(columns="Sl/no", inplace=True)
+        print(df)
+        # Make sure NaN -> None so Mongo can store them
+        if utility=="Discom":
+            df1=df[df['Generator_Name']=="Power_Exchange"]
+            df1.drop(columns="Generator_Name",inplace=True)
+            return self.createDict(df1,"Discom_Name" )
+        else:
+            df1 = df[df['Discom_Name'] == "Centre"]
+            df1.drop(columns="Discom_Name")
+            return self.createDict(df1, "Generator_Name")
+    def getRTM(self,utility="Discom"):
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="RTM")
+        df.drop(columns="Sl/no", inplace=True)
+        print(df)
+        # Make sure NaN -> None so Mongo can store them
+        if utility=="Discom":
+            df1=df[df['Generator_Name']=="RTM"]
+            df1.drop(columns="Generator_Name",inplace=True)
+            return self.createDict(df1,"Discom_Name" )
+        else:
+            df1 = df[df['Discom_Name'] == "RTM"]
+            df1.drop(columns="Discom_Name")
+            return self.createDict(df1, "Generator_Name")
+
+    def getPX(self):
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="PX")
+        df.drop(columns="Sl/no", inplace=True)
+        df=df[~(df['Discom_Name']=="Power_Exchange")]
+        df.drop(columns="Generator_Name",inplace=True)
+        return self.createDict(df,"Discom_Name" )
+    def getREMC(self):
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="REMC")
+        df.drop(columns="Sl/no", inplace=True)
+        return self.createDict(df,"Discom_Name" )
+
+    def getDemand(self):
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="REMC")
+        df.drop(columns="Sl/no", inplace=True)
+        return self.createDict(df,"Discom_Name" )
+
+    def getIntraDiscomTrade(self):
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="INTRA_DISCOM_TRADE")
+        df.drop(columns="Sl/no", inplace=True)
+        return self.createDict(df, "Discom_Name")
 

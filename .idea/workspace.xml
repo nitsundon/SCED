@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="Apply theme">
+    <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="CReate Dict function edit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classses/Handle_Excel_File.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/Handle_Excel_File.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classses/uploadData.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/uploadData.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758003535488</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="CReate Dict function edit">
+      <option name="closed" value="true" />
+      <created>1758028100394</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1758028100394</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -228,6 +238,7 @@
     <MESSAGE value="create_sunburst.py created" />
     <MESSAGE value="Dash with bootstrap setup" />
     <MESSAGE value="Apply theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Apply theme" />
+    <MESSAGE value="CReate Dict function edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="CReate Dict function edit" />
   </component>
 </project>
