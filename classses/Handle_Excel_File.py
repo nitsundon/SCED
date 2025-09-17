@@ -145,5 +145,12 @@ class HandleExcelFile:
         df=self.getIntraDC()
         df1=self.getOAMODGen()
         return df.merge(df1,on="Generator_Name")
-df=HandleExcelFile().getCommonGen()
-print(df.columns)
+
+    def AllContract(self):
+        df=self.getGenRate().drop(columns='share')
+        df1=self.getOAGen()
+        df2=pd.concat([df1,df])
+        return df2
+
+
+df=HandleExcelFile().AllContract()
