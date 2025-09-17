@@ -40,7 +40,7 @@ class HandleExcelFile:
         arr={}
         for group_index, group_df in group_object.groupby(col):
             group_df.columns = group_df.columns.map(str)
-            arr[group_index] = group_df.drop(columns=col).to_dict(orient="records")
+            arr[group_index] = group_df.drop(columns=col).to_dict(orient="records")[0]
 
         return arr
 

@@ -18,6 +18,7 @@ json_string['revision']=revision_id
 json_string['info']=geninfo
 
 
-
+db=MongoConnect().getDB()
+db['inputs'].insert_one(json_string)
 
 

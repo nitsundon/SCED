@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="Changes in Excel Handler" />
+    <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="Changes in uploaddatra">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classses/Handle_Excel_File.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/Handle_Excel_File.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classses/uploadData.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/uploadData.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -271,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758094818838</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Changes in uploaddatra">
+      <option name="closed" value="true" />
+      <created>1758131888982</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1758131888982</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +308,7 @@
     <MESSAGE value="CReate Dict function edit" />
     <MESSAGE value="Create Handle Excel File extract featrues" />
     <MESSAGE value="Changes in Excel Handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in Excel Handler" />
+    <MESSAGE value="Changes in uploaddatra" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes in uploaddatra" />
   </component>
 </project>
