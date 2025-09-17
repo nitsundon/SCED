@@ -115,7 +115,35 @@ class HandleExcelFile:
 
         return df2
 
-df=HandleExcelFile().getIntraDC()
+    def getGenRate(self):
+        df=self.getIntraShare()
+        df1= pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_INFO")
+        df2 = df.merge(df1, on="Generator_Name",how="inner")
+        return df2.drop(columns=[ 'Sl/no', 'InsgsType','Company', 'InstalledCapacity', 'ExBusInstalledCapacity',])
 
 
-print(df.iloc[-29:])
+    def getMODGenOnly(self):
+        df=HandleExcelFile().getGenRate()
+        return df[(df['MOD_Rate']*df['MOD_Applicability'])>0].reset_index(drop=True)
+
+    def getNONMODGenOnly(self):
+        df=HandleExcelFile().getGenRate()
+        return df[~((df['MOD_Rate']*df['MOD_Applicability'])>0)].reset_index(drop=True)
+
+    def getOAGen(self):
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="OA_REQUISITION_DATA")
+        return df[['Generator_Name','Discom_Name','OA_Type','Approval_No','MOD_Rate','MOD_Applicability']]
+
+    def getOAMODGen(self):
+        df=self.getOAGen();
+        return df[((df['MOD_Rate']*df['MOD_Applicability'])>0)]
+    def getOANONMODGen(self):
+        df=self.getOAGen();
+        return df[~((df['MOD_Rate']*df['MOD_Applicability'])>0)]
+
+    def getCommonGen(self):
+        df=self.getIntraDC()
+        df1=self.getOAMODGen()
+        return df.merge(df1,on="Generator_Name")
+df=HandleExcelFile().getCommonGen()
+print(df.columns)
