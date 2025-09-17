@@ -130,6 +130,11 @@ class HandleExcelFile:
         df=HandleExcelFile().getGenRate()
         return df[~((df['MOD_Rate']*df['MOD_Applicability'])>0)].reset_index(drop=True)
 
+    def getIntraNONMODDC(self):
+        df=self.getNONMODGenOnly()
+        df1=self.getIntraDC()
+        return df.merge(df1,on="Generator_Name")
+
     def getOAGen(self):
         df = pd.read_excel(self.file_path, skiprows=2, sheet_name="OA_REQUISITION_DATA")
         return df[['Generator_Name','Discom_Name','OA_Type','Approval_No','MOD_Rate','MOD_Applicability']]
@@ -153,4 +158,4 @@ class HandleExcelFile:
         return df2
 
 
-df=HandleExcelFile().AllContract()
+
