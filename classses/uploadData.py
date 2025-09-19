@@ -16,7 +16,6 @@ nonmod=handler.createDict(handler.getIntraNONMODDC())
 
 json_string['revision_id']=revision_id
 json_string['info']=geninfo
-json_string['fixed']=handler.createDict(handler.getIntraNONMODDC())
 json_string['demand']=handler.getDemand()
 json_string['dc']=handler.createMutliKeyDict(handler.getIntraDC(),col=["Generator_Name","Discom_Name"])
 db=MongoConnect().getDB()

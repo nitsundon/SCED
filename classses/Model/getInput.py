@@ -4,12 +4,17 @@ from classses.ConnectionHandler import MongoConnect
 
 
 class getSingleInput:
-    def __init__(self, dt: str = "04-09-2025"):
-        self.db = MongoConnect().getDB()
+    def __init__(self, dt= "04-09-2025",db=None):
+
         self.dt=dt
+        self.db = db
+        if self.db is None:
+            self.db=MongoConnect().getDB()
+
         self.revision_no=self.getrevision()
 
     def getrevision(self) -> str:
+        print(self.dt)
         revision_id = self.db['revisions'].find({'date': self.dt}, {'_id': 1}).sort({'revision_no':-1}).limit(1)
         return list(revision_id)[0]['_id']
 
@@ -34,7 +39,7 @@ class getSingleInput:
                 records.append(record)
 
         df = pd.DataFrame(records)
-        print(df.iloc[-30:])
+
         return df
 
     def getRates(self):
@@ -60,5 +65,12 @@ class getSingleInput:
 
         return df
 
+    def getDCwithRate(self):
+        df1=self.getRates().drop(columns=["Discom_Name"])
+        df2=self.getDC()
+        df3=df1.merge(df2,on="Generator_Name")
+        df3.drop(columns=["InsgsType","Company","InstalledCapacity","ExBusInstalledCapacity"],inplace=True)
+        df3=df3[df3['MOD_Rate']*df3['MOD_Applicability']>0].drop(columns="MOD_Applicability")
+        df3=df3.melt(id_vars=["Generator_Name","Discom_Name","MOD_Rate"],var_name="Block",value_name="MW")
+        return df3
 
-print(getSingleInput().getRates()[['Generator_Name','Discom_Name','MOD_Rate','MOD_Applicability']])

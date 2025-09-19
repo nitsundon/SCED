@@ -149,7 +149,7 @@ class HandleExcelFile:
         df=self.getIntraShare()
         df1= pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_INFO")
         df2 = df.merge(df1, on="Generator_Name",how="inner")
-        return df2.drop(columns=[ 'Sl/no', 'InsgsType','Company', 'InstalledCapacity', 'ExBusInstalledCapacity',])
+        return df2.drop(columns=[ 'Sl/no',"share"])
 
 
     def getMODGenOnly(self):
