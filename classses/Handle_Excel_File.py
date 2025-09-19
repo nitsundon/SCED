@@ -36,22 +36,40 @@ class HandleExcelFile:
             print(existing)
             return existing['_id']
 
-    def createDict(self, group_object, col="Generator_Name"):
+    def createDict(self,group_object,col="Generator_Name"):
+        arr={}
+        for group_index, group_df in group_object.groupby(col):
+            group_df.columns = group_df.columns.map(str)
+            arr[group_index] = group_df.drop(columns=col).to_dict(orient="records")[0]
+
+        return arr
+
+    def createMutliKeyDict(self, group_object, col=["Generator_Name", "Discom_Name"]):
         arr = {}
 
-        # Always treat col as list
+        # enforce list type
         if isinstance(col, str):
             col = [col]
 
         for group_index, group_df in group_object.groupby(col):
-            # group_index is a scalar if col has one element, otherwise a tuple
-            if isinstance(group_index, tuple):
-                key = group_index
+            # if grouping by 2 columns, group_index is a tuple (generator, discom)
+            if len(col) == 1:
+                generator = group_index
+                discom = None
             else:
-                key = (group_index,)
+                generator, discom = group_index
 
             group_df.columns = group_df.columns.map(str)
-            arr[key] = group_df.drop(columns=col).to_dict(orient="records")[0]
+            data = group_df.drop(columns=col).to_dict(orient="records")[0]
+
+            # build nested dict
+            if generator not in arr:
+                arr[generator] = {}
+
+            if discom is not None:
+                arr[generator][discom] = data
+            else:
+                arr[generator] = data
 
         return arr
 
@@ -115,15 +133,16 @@ class HandleExcelFile:
         df = pd.melt(df, id_vars="Generator_Name",var_name="Discom_Name",value_name="share").dropna().sort_values("Generator_Name").reset_index(drop=True)
 
         return df
-    def getIntraDC(self):
+    def getIntraDC(self,dropShareCol=True):
         df=self.getIntraShare()
         df1=pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_DC_DATA")
-
+        df1.drop(columns="Sl/no", inplace=True)
         df2=df.merge(df1,on=["Generator_Name"])
 
         for col in range(1, 97):
             df2[col] = round(df2[col] * df2['share']/100,2)
-
+        if dropShareCol:
+            df2.drop(columns="share",inplace=True)
         return df2
 
     def getGenRate(self):
@@ -143,7 +162,7 @@ class HandleExcelFile:
 
     def getIntraNONMODDC(self):
         df=self.getNONMODGenOnly()
-        df1=self.getIntraDC().drop(columns=['share','Sl/no'])
+        df1=self.getIntraDC(dropShareCol=True)
         return df.merge(df1,on=["Generator_Name","Discom_Name"])
 
 
