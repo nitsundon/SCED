@@ -36,11 +36,22 @@ class HandleExcelFile:
             print(existing)
             return existing['_id']
 
-    def createDict(self,group_object,col="Generator_Name"):
-        arr={}
+    def createDict(self, group_object, col="Generator_Name"):
+        arr = {}
+
+        # Always treat col as list
+        if isinstance(col, str):
+            col = [col]
+
         for group_index, group_df in group_object.groupby(col):
+            # group_index is a scalar if col has one element, otherwise a tuple
+            if isinstance(group_index, tuple):
+                key = group_index
+            else:
+                key = (group_index,)
+
             group_df.columns = group_df.columns.map(str)
-            arr[group_index] = group_df.drop(columns=col).to_dict(orient="records")[0]
+            arr[key] = group_df.drop(columns=col).to_dict(orient="records")[0]
 
         return arr
 
@@ -108,7 +119,7 @@ class HandleExcelFile:
         df=self.getIntraShare()
         df1=pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_DC_DATA")
 
-        df2=df.merge(df1,on="Generator_Name")
+        df2=df.merge(df1,on=["Generator_Name"])
 
         for col in range(1, 97):
             df2[col] = round(df2[col] * df2['share']/100,2)
@@ -132,8 +143,10 @@ class HandleExcelFile:
 
     def getIntraNONMODDC(self):
         df=self.getNONMODGenOnly()
-        df1=self.getIntraDC()
-        return df.merge(df1,on="Generator_Name")
+        df1=self.getIntraDC().drop(columns=['share','Sl/no'])
+        return df.merge(df1,on=["Generator_Name","Discom_Name"])
+
+
 
     def getOAGen(self):
         df = pd.read_excel(self.file_path, skiprows=2, sheet_name="OA_REQUISITION_DATA")

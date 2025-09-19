@@ -14,11 +14,12 @@ demand=handler.getDemand()
 nonmod=handler.createDict(handler.getIntraNONMODDC())
 
 
-json_string['revision']=revision_id
+json_string['revision_id']=revision_id
 json_string['info']=geninfo
-
-
+json_string['fixed']=handler.createDict(handler.getIntraNONMODDC())
+json_string['demand']=handler.getDemand()
+json_string['dc']=handler.createDict(handler.getIntraDC(),col=["Generator_Name","Discom_Name"])
 db=MongoConnect().getDB()
-db['inputs'].insert_one(json_string)
+db['parameters'].update_one({'revision_id':revision_id}, {"$setOnInsert": json_string}, upsert=True)
 
 
