@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="Changes:&#10;Handle_Excel_File.py: Inclue createMultiKeyDict&#10;uploadData.py: Resolve bug for intra dc not including multi discoms">
-      <change afterPath="$PROJECT_DIR$/classses/graph/home_graphs.py" afterDir="false" />
+    <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="Changes made to include Sun burst graph in HOme page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classses/Handle_Excel_File.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/Handle_Excel_File.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classses/Model/getInput.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/Model/getInput.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classses/uploadData.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/uploadData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classses/graph/home_graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/graph/home_graphs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -313,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758267620260</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Changes made to include Sun burst graph in HOme page">
+      <option name="closed" value="true" />
+      <created>1758281320840</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1758281320840</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,6 +347,18 @@
     <MESSAGE value="Changes in uploaddatra" />
     <MESSAGE value="Changes:&#10;Added getInput files&#10;Change createDict in Handle_Excel" />
     <MESSAGE value="Changes:&#10;Handle_Excel_File.py: Inclue createMultiKeyDict&#10;uploadData.py: Resolve bug for intra dc not including multi discoms" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes:&#10;Handle_Excel_File.py: Inclue createMultiKeyDict&#10;uploadData.py: Resolve bug for intra dc not including multi discoms" />
+    <MESSAGE value="Changes made to include Sun burst graph in HOme page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes made to include Sun burst graph in HOme page" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pages/home.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

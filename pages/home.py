@@ -13,6 +13,7 @@ dash.register_page(__name__, path="/", name="Home", order=0)
 db = MongoConnect().getDB()
 
 df = getSingleInput(db=db).getDCwithRate()
+
 hg = HomeGraphs(db)
 layout = dbc.Container([
 
@@ -25,7 +26,7 @@ layout = dbc.Container([
                         html.H6(["Sun Burst Plot"], className="m-0 font-weight-bold text-primary")
                     ], className=""),
                     dbc.CardBody([
-                        dcc.Graph(id="home-sunburst-fig", ),
+                        dcc.Graph(id="home-sunburst-fig", figure=hg.SunburstGraph(df, 1) ),
 
                         dcc.Slider(
                             min=1,
@@ -40,7 +41,17 @@ layout = dbc.Container([
 
                     ])
                 ], )
-            ], lg=4)
+            ], lg=4),
+            dbc.Col([
+                dbc.Card([
+                    dbc.CardHeader([
+html.H6(["Forecasted Demand Curve"], className="m-0 font-weight-bold text-primary")
+                    ]),
+                    dbc.CardBody([
+                            dcc.Graph(id="home-demand-curve", figure=hg.PlotDemandCurve()),
+                    ])
+                ],className="h-100")
+            ],lg=8)
         ], className="mt-3")
     ])
 
@@ -52,5 +63,5 @@ layout = dbc.Container([
           prevent_initial_call=True)
 def loadSunBurstPlot(val):
     print(val)
-    figure = HomeGraphs(db).SunburstGraph(df, val)
+    figure = hg.SunburstGraph(df, val)
     return figure

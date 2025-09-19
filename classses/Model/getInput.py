@@ -12,6 +12,9 @@ class getSingleInput:
             self.db=MongoConnect().getDB()
 
         self.revision_no=self.getrevision()
+        self.cursor = self.db['parameters'].find_one(
+            {'revision_id': self.revision_no},
+        )
 
     def getrevision(self) -> str:
         print(self.dt)
@@ -20,10 +23,7 @@ class getSingleInput:
 
     def getDC(self):
          # fetch document from MongoDB
-        cursor = self.db['parameters'].find_one(
-            {'revision_id': self.revision_no},
-            {'dc': 1, '_id': 0}
-        )
+        cursor = self.cursor
 
         if not cursor or 'dc' not in cursor:
             print("No DC data found")
@@ -44,10 +44,7 @@ class getSingleInput:
 
     def getRates(self):
         # fetch document from MongoDB
-        cursor = self.db['parameters'].find_one(
-            {'revision_id': self.revision_no},
-            {'info': 1, '_id': 0}
-        )
+        cursor = self.cursor
 
         if not cursor or 'info' not in cursor:
             print("No info data found")
@@ -73,4 +70,24 @@ class getSingleInput:
         df3=df3[df3['MOD_Rate']*df3['MOD_Applicability']>0].drop(columns="MOD_Applicability")
         df3=df3.melt(id_vars=["Generator_Name","Discom_Name","MOD_Rate"],var_name="Block",value_name="MW")
         return df3
+
+    def getDemand(self):
+        # fetch document from MongoDB
+
+        cursor=self.cursor
+        if not cursor or 'demand' not in cursor:
+            print("No info data found")
+            return pd.DataFrame()
+
+        data = cursor['demand']  # <- your nested dict
+
+        records = []
+        for discom, values in data.items():
+            record = {"Discom_Name": discom}
+            record.update(values)  # merge Discom_Name, share, MOD_Rate, etc.
+            records.append(record)
+
+        df = pd.DataFrame(records)
+
+        return df
 
