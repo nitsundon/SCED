@@ -76,7 +76,7 @@ class HandleExcelFile:
     def getCentre(self,utility="Discom"):
         df = pd.read_excel(self.file_path, skiprows=2, sheet_name="CENTRE")
         df.drop(columns="Sl/no", inplace=True)
-        print(df)
+
         # Make sure NaN -> None so Mongo can store them
         if utility=="Discom":
             df1=df[df['Generator_Name']=="Power_Exchange"]
@@ -89,7 +89,7 @@ class HandleExcelFile:
     def getRTM(self,utility="Discom"):
         df = pd.read_excel(self.file_path, skiprows=2, sheet_name="RTM")
         df.drop(columns="Sl/no", inplace=True)
-        print(df)
+
         # Make sure NaN -> None so Mongo can store them
         if utility=="Discom":
             df1=df[df['Generator_Name']=="RTM"]
@@ -191,9 +191,31 @@ class HandleExcelFile:
 
     def getOAReq(self):
         df = pd.read_excel(self.file_path, skiprows=2, sheet_name="OA_REQUISITION_DATA")
+        df.columns = df.columns.map(str)
+        df.drop(columns="Sl/No",inplace=True)
+        # df['NoMOD']=df['MOD_Rate']*df['MOD_Applicability']==0
+        # df.loc[~df['NoMOD'], "type"] = "underMOD"
+        # df.loc[df['NoMOD'], "type"] = "Fixed"
         return df
 
+    def set_in(self,d, keys, value):
+        cur = d
+        for k in keys[:-1]:
+            cur = cur.setdefault(k, {})  # create sub-dicts as needed
 
-df=HandleExcelFile().getOAReq()
+        cur[keys[-1]] = value
+        return d
 
-df1=df.groupby(by=["Generator_Name","Discom_Name","Approval_No"])
+    def createMultikeyDictNew(self,df,col):
+        df1=df.groupby(by=col)
+
+
+
+        out = {}
+        for grp_key,grp_df in df1:
+            grp_df.columns = grp_df.columns.map(str)
+            self.set_in(out, grp_key, grp_df.to_dict(orient="records"))
+
+
+        return out
+
