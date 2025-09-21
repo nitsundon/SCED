@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 class HandleExcelFile:
-    def __init__(self, file_path='../data/input.xlsx'):
+    def __init__(self, file_path='../data/input1.xlsx'):
         df = pd.read_excel(file_path)
         # df.drop(columns="Sl/no",inplace=True)
         # Make sure NaN -> None so Mongo can store them
@@ -79,7 +79,7 @@ class HandleExcelFile:
 
         # Make sure NaN -> None so Mongo can store them
         if utility=="Discom":
-            df1=df[df['Generator_Name']=="Power_Exchange"]
+            df1=df[df['Generator_Name']=="Power_Exchange"].copy()
             df1.drop(columns="Generator_Name",inplace=True)
             return self.createDict(df1,"Discom_Name" )
         else:
@@ -192,7 +192,7 @@ class HandleExcelFile:
     def getOAReq(self):
         df = pd.read_excel(self.file_path, skiprows=2, sheet_name="OA_REQUISITION_DATA")
         df.columns = df.columns.map(str)
-        df.drop(columns="Sl/No",inplace=True)
+        df.drop(columns="Sl/no",inplace=True)
         # df['NoMOD']=df['MOD_Rate']*df['MOD_Applicability']==0
         # df.loc[~df['NoMOD'], "type"] = "underMOD"
         # df.loc[df['NoMOD'], "type"] = "Fixed"

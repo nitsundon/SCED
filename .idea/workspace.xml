@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="Changes:&#10;getInput.py: Added Demand Curve data&#10;home page: Added demand curve dropdown and changes in homne graph">
+    <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="Changes:&#10;Change to upload OA req">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classses/Handle_Excel_File.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/Handle_Excel_File.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classses/uploadData.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/uploadData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classses/Model/getInput.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/Model/getInput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758456051422</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Changes:&#10;Change to upload OA req">
+      <option name="closed" value="true" />
+      <created>1758461058547</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1758461058547</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -354,6 +363,7 @@
     <MESSAGE value="Changes:&#10;Handle_Excel_File.py: Inclue createMultiKeyDict&#10;uploadData.py: Resolve bug for intra dc not including multi discoms" />
     <MESSAGE value="Changes:&#10;getInput.py: Add getRates and get DC method" />
     <MESSAGE value="Changes:&#10;getInput.py: Added Demand Curve data&#10;home page: Added demand curve dropdown and changes in homne graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes:&#10;getInput.py: Added Demand Curve data&#10;home page: Added demand curve dropdown and changes in homne graph" />
+    <MESSAGE value="Changes:&#10;Change to upload OA req" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes:&#10;Change to upload OA req" />
   </component>
 </project>

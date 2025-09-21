@@ -4,7 +4,7 @@ from classses.ConnectionHandler import MongoConnect
 
 
 class getSingleInput:
-    def __init__(self, dt= "04-09-2025",db=None):
+    def __init__(self, dt= "21-09-2025",db=None):
 
         self.dt=dt
         self.db = db
