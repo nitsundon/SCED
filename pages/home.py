@@ -11,9 +11,9 @@ import plotly.graph_objs as go
 dash.register_page(__name__, path="/", name="Home", order=0)
 
 db = MongoConnect().getDB()
-
-df = getSingleInput(db=db).getDCwithRate()
-
+ipf=getSingleInput(db=db)
+df = ipf.getDCwithRate()
+df_demandcurve=ipf.getDatafromDemandCurve()
 hg = HomeGraphs(db)
 layout = dbc.Container([
 
@@ -26,7 +26,7 @@ layout = dbc.Container([
                         html.H6(["Sun Burst Plot"], className="m-0 font-weight-bold text-primary")
                     ], className=""),
                     dbc.CardBody([
-                        dcc.Graph(id="home-sunburst-fig", figure=hg.SunburstGraph(df, 1) ),
+                        dcc.Graph(id="home-sunburst-fig", figure=hg.SunburstGraph(df, 1)),
 
                         dcc.Slider(
                             min=1,
@@ -45,13 +45,41 @@ layout = dbc.Container([
             dbc.Col([
                 dbc.Card([
                     dbc.CardHeader([
-html.H6(["Forecasted Demand Curve"], className="m-0 font-weight-bold text-primary")
+                        html.Div([
+                            dbc.Col(
+                                [html.H6(["Forecasted Demand Curve"], className="m-0 font-weight-bold text-primary"), ],
+                                lg=6),
+                            dbc.Col([
+                                dcc.Loading(id="loading",
+                                            type="circle",  # "default", "circle", or "dot"
+                                            children=[
+                                                dcc.Dropdown(
+                                                    options={
+                                                        "demand": "Demand",
+                                                        "centre": "Centre Share",
+                                                        "px":"Power Exchange",
+                                                        "remc":"REMC",
+                                                        "rtm":"Real Time Market",
+                                                        "standby":"Standby",
+                                                        "interdiscom":"Inter Discom Trade"
+
+                                                    },
+                                                    id="dd_share_from_demand_curve",
+                                                )
+                                            ])
+
+                            ],
+                                lg=6
+                            )
+
+                        ], className="d-flex")
+
                     ]),
                     dbc.CardBody([
-                            dcc.Graph(id="home-demand-curve", figure=hg.PlotDemandCurve()),
+                        dcc.Graph(id="home-demand-curve", figure=hg.PlotDemandCurve(df_demandcurve)),
                     ])
-                ],className="h-100")
-            ],lg=8)
+                ], className="h-100")
+            ], lg=8)
         ], className="mt-3")
     ])
 
@@ -62,6 +90,14 @@ html.H6(["Forecasted Demand Curve"], className="m-0 font-weight-bold text-primar
           Input("sunburst_block_selector", "value"),
           prevent_initial_call=True)
 def loadSunBurstPlot(val):
-    print(val)
     figure = hg.SunburstGraph(df, val)
+    return figure
+
+
+@callback(Output("home-demand-curve", "figure"),
+          Input("dd_share_from_demand_curve", "value"),
+          prevent_initial_call=True)
+def loadDemandCurve(val):
+    print(val)
+    figure = hg.PlotDemandCurve(df_demandcurve,head=val)
     return figure

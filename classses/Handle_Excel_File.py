@@ -189,5 +189,11 @@ class HandleExcelFile:
         df2=pd.concat([df1,df])
         return df2
 
+    def getOAReq(self):
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="OA_REQUISITION_DATA")
+        return df
 
 
+df=HandleExcelFile().getOAReq()
+
+df1=df.groupby(by=["Generator_Name","Discom_Name","Approval_No"])

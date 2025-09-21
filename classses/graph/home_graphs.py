@@ -38,8 +38,19 @@ class HomeGraphs:
         )
         return fig
 
-    def PlotDemandCurve(self):
-        df = getSingleInput(db=self.db).getDemand()
+    def select_head_dropdown(self,value):
+        ipf=getSingleInput(db=self.db)
+        match value:
+            case "demand":
+                return ipf.getDemand()
+            case "centre":
+                print("here")
+                return ipf.getCentre()
+
+            case _:
+                return ipf.getDemand()
+    def PlotDemandCurve(self,df,head="demand"):
+        df=df[df['head']==head]
         df=df.melt(id_vars=["Discom_Name"],var_name="Block",value_name="MW")
         group_object=df.groupby(by="Discom_Name")
         fig=go.Figure()
@@ -70,4 +81,3 @@ class HomeGraphs:
         return fig
 
 
-HomeGraphs(MongoConnect().getDB()).PlotDemandCurve()

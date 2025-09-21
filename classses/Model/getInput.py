@@ -14,10 +14,13 @@ class getSingleInput:
         self.revision_no=self.getrevision()
         self.cursor = self.db['parameters'].find_one(
             {'revision_id': self.revision_no},
+            {
+                '_id':0,'revision_id':0
+            }
         )
 
     def getrevision(self) -> str:
-        print(self.dt)
+
         revision_id = self.db['revisions'].find({'date': self.dt}, {'_id': 1}).sort({'revision_no':-1}).limit(1)
         return list(revision_id)[0]['_id']
 
@@ -90,4 +93,28 @@ class getSingleInput:
         df = pd.DataFrame(records)
 
         return df
+
+    def getDatafromDemandCurve(self):
+        # fetch document from MongoDB
+
+        cursor=self.cursor
+        if not cursor or 'centre' not in cursor:
+            print("No info data found")
+            return pd.DataFrame()
+
+        data = cursor  # <- your nested dict
+        df1=pd.DataFrame()
+        for key in ["demand","remc","px","centre","rtm","standby","interdiscom"]:
+
+
+            records = []
+            for discom, values in data[key].items():
+                record = {"Discom_Name": discom,'head':key}
+                record.update(values)  # merge Discom_Name, share, MOD_Rate, etc.
+                records.append(record)
+
+                df = pd.DataFrame(records)
+                df1=pd.concat([df,df1]).reset_index(drop=True)
+
+        return df1
 

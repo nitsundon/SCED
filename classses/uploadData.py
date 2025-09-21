@@ -18,6 +18,12 @@ json_string['revision_id']=revision_id
 json_string['info']=geninfo
 json_string['demand']=handler.getDemand()
 json_string['dc']=handler.createMutliKeyDict(handler.getIntraDC(),col=["Generator_Name","Discom_Name"])
+json_string['px']=handler.getPX()
+json_string['remc']=handler.getREMC()
+json_string['centre']=handler.getCentre()
+json_string['rtm']=handler.getRTM()
+json_string['standby']=handler.getStandby()
+json_string['interdiscom']=handler.getIntraDiscomTrade()
 db=MongoConnect().getDB()
 db['parameters'].update_one({'revision_id':revision_id}, {"$setOnInsert": json_string}, upsert=True)
 
