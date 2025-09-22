@@ -208,9 +208,6 @@ class HandleExcelFile:
 
     def createMultikeyDictNew(self,df,col):
         df1=df.groupby(by=col)
-
-
-
         out = {}
         for grp_key,grp_df in df1:
             grp_df.columns = grp_df.columns.map(str)
@@ -219,3 +216,32 @@ class HandleExcelFile:
 
         return out
 
+    def getPminofIntra(self, contract_type: {"all","oa","intra"} = "all"):
+        # Read Excel
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_TECH_MIN_DATA")
+        df.drop(columns=["Sl/no"], inplace=True)
+        # Handle empty/NaN values properly
+
+        # Apply contract_type filter if needed
+        if contract_type == "intra":
+            df = df[df['Approval_No'].isna() | (df['Approval_No'].astype(str).str.strip() == "")]
+
+            df.drop(columns=[ "Approval_No"], inplace=True)
+        elif contract_type == "oa":
+            df = df[~(df['Approval_No'].isna() | (df['Approval_No'].astype(str).str.strip() == ""))]
+
+
+        # if "all", no extra filtering
+
+        return df
+
+    def getRamp(self,direction:{"up","down"}="up"):
+        if direction =="up":
+            df = pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_RAMP_UP_DATA")
+        elif direction =="down":
+            df = pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_RAMP_DOWN_DATA")
+        df.drop(columns=["Sl/no"], inplace=True)
+
+        df=df[df['Approval_N0'].isna | df['Approval_No'].astype(str).str.strip()==""]
+        df.drop(columns="Approval_No",inplace=True)
+        return df
