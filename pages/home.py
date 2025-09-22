@@ -1,4 +1,5 @@
 import dash
+import pandas as pd
 from dash import html, dcc
 import dash_bootstrap_components as dbc
 from dash import html, Input, Output, State, callback, dash_table
@@ -89,11 +90,12 @@ layout = dbc.Container([
                     [
                         dbc.CardHeader([
                             html.Div([
-                                dbc.Col([html.H6(["Generation Graph"], className="m-0 font-weight-bold text-primary",id="temp")],lg=6),
+                                dbc.Col([html.H6(["Generation Graph"], className="m-0 font-weight-bold text-primary",
+                                                 id="temp")], lg=6),
                                 dbc.Col([
-                                    dcc.Dropdown(options=df_dc['Generator_Name'].values,id="dd_home_gen_select")
-                                ],lg=6)
-                            ],className="d-flex")
+                                    dcc.Dropdown(options=df_dc['Generator_Name'].unique(), id="dd_home_gen_select")
+                                ], lg=6)
+                            ], className="d-flex")
 
                         ], className="text-primary"),
                         dbc.CardBody([
@@ -127,11 +129,46 @@ def loadDemandCurve(val):
     figure = hg.PlotDemandCurve(df_demandcurve, head=val)
     return figure
 
-@callback(Output("home_dc_curve", "figure"),
-          Input("dd_home_gen_select", "value"),
-          prevent_initial_call=True)
-def loadDemandCurve(val):
 
-    df=df_dc[df_dc['Generator_Name']==val].drop(columns="Generator_Name")
-    fig=go.Figure(go.Scatter(df.to_dict(),marker="lines"))
+@callback(
+    Output("home_dc_curve", "figure"),
+    Input("dd_home_gen_select", "value"),
+    prevent_initial_call=True
+)
+def loadDemandCurve(val):
+    # Filter by generator
+    fig = go.Figure()
+    df1 = df_dc[df_dc['Generator_Name'] == val].set_index("Discom_Name")
+    df1=df1.drop(columns="Generator_Name")
+    # df = df1.groupby(by="Generator_Name").sum()
+
+    for k,df2 in df1.iterrows():
+        # df = df2.drop(columns=["Discom_Name"])
+        # df2 = df2.drop(columns=["Discom_Name","Generator_Name"])
+
+        # df_melted = df2.melt(var_name="Block", value_name="MW")
+        fig.add_trace(go.Scatter(
+            x=df2.index,
+            y=df2,
+            name=k,
+            mode="lines+markers"
+        ))
+
+    # Convert wide format (1..96) to long format
+
+    # df_melted["Block"] = df_melted["Block"].astype(int)  # ensure numeric x-axis
+
+    # Debug print
+    # print(df_melted.head())
+
+    # Build figure
+
+
+    fig.update_layout(
+        title=f"Load Demand Curve for {val}",
+        xaxis_title="Time Block (1–96)",
+        yaxis_title="MW",
+        template="plotly_white"
+    )
+
     return fig
