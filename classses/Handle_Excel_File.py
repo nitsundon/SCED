@@ -92,7 +92,7 @@ class HandleExcelFile:
 
         # Make sure NaN -> None so Mongo can store them
         if utility=="Discom":
-            df1=df[df['Generator_Name']=="RTM"]
+            df1=df[df['Generator_Name']=="RTM"].copy()
             df1.drop(columns="Generator_Name",inplace=True)
             return self.createDict(df1,"Discom_Name" )
         else:
@@ -242,6 +242,13 @@ class HandleExcelFile:
             df = pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_RAMP_DOWN_DATA")
         df.drop(columns=["Sl/no"], inplace=True)
 
-        df=df[df['Approval_N0'].isna | df['Approval_No'].astype(str).str.strip()==""]
+        df = df[df['Approval_No'].isna() | (df['Approval_No'].astype(str).str.strip() == "")]
         df.drop(columns="Approval_No",inplace=True)
         return df
+
+
+    def getHydroReq(self):
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="DISCOM_HYDRO_REQ_DETAILS")
+        df.drop(columns=["Sl/no"], inplace=True)
+        return df
+

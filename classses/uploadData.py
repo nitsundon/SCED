@@ -28,11 +28,12 @@ json_string['interdiscom']=handler.getIntraDiscomTrade()
 json_string['oa_req']=handler.getOAReq().to_dict(orient="records")
 json_string['pmin_intra']=handler.createDict(handler.getPminofIntra(contract_type="intra"))
 json_string['pmin_oa']=handler.createMutliKeyDict(handler.getPminofIntra(contract_type="oa"),col=["Generator_Name","Approval_No"])
-
+#
 json_string['rampup']=handler.createDict(handler.getRamp())
 json_string['rampdown']=handler.createDict(handler.getRamp(direction="down"))
 
-
+json_string["hydro_req"]=handler.createMutliKeyDict(handler.getHydroReq(),col=["Generator_Name","Discom_Name"])
+print(handler.createDict(handler.getRamp()))
 
 db=MongoConnect().getDB()
 db['parameters'].update_one({'revision_id':revision_id}, {"$setOnInsert": json_string}, upsert=True)
