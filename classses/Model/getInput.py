@@ -44,7 +44,69 @@ class getSingleInput:
         df = pd.DataFrame(records)
 
         return df
+    def getPminIntra(self):
+         # fetch document from MongoDB
+        cursor = self.cursor
 
+        if not cursor or 'pmin_intra' not in cursor:
+            print("No DC data found")
+            return pd.DataFrame()
+
+        data = cursor['pmin_intra']  # <-- use the actual MongoDB dc dict
+
+        records = []
+        for gen, discoms in data.items():
+            for discom, values in discoms.items():
+                record = {"Generator_Name": gen, "Discom_Name": discom}
+                record.update(values)  # flatten MW, Price, etc.
+                records.append(record)
+
+        df = pd.DataFrame(records)
+
+        return df
+    def getTechmin(self):
+        # fetch document from MongoDB
+        cursor = self.cursor
+
+        if not cursor or 'pmin_intra' not in cursor:
+            print("No DC data found")
+            return pd.DataFrame()
+
+        data = cursor['pmin_intra']  # <-- use the actual MongoDB dc dict
+
+        records = []
+        for gen, discoms in data.items():
+            for discom, values in discoms.items():
+                record = {"Generator_Name": gen, "Discom_Name": discom}
+                record.update(values)  # flatten MW, Price, etc.
+                records.append(record)
+
+        df = pd.DataFrame(records)
+
+        return df
+    def getGenParametersForGraph(self):
+        df=self.getDC()
+
+        df_min=self.getPminIntra()
+
+        df['parameter']="DC"
+
+        df_min['parameter']="Pmin"
+        df_min.drop(columns="share",inplace=True)
+
+        df1=self.getRates()
+
+        df1=df1[["Generator_Name","InstalledCapacity","ExBusInstalledCapacity"]]
+
+        df1=df1.melt(id_vars="Generator_Name",var_name="parameter",value_name="value")
+        for i in range(1,97):
+            df1[str(i)]=df1['value']
+        df1.drop(columns="value",inplace=True)
+        df3=pd.concat([df1,df,df_min])
+        df3['Discom_Name']=df3['Discom_Name'].fillna("")
+        df3['parameter']=df3['parameter']+" "+df3['Discom_Name'].astype(str)
+        df3.drop(columns="Discom_Name",inplace=True)
+        return df3
     def getRates(self):
         # fetch document from MongoDB
         cursor = self.cursor

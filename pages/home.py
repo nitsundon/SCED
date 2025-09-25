@@ -16,11 +16,12 @@ hg = HomeGraphs(db)
 ipf = getSingleInput(db=db)
 df = ipf.getDCwithRate()
 df_demandcurve = ipf.getDatafromDemandCurve()
-df_dc = ipf.getDC()
+df_dc = ipf.getGenParametersForGraph()
 
 layout = dbc.Container([
 
     html.Div([
+
         html.H1(["Dashboard"], className="h3 mb-0 text-gray-800"),
         dbc.Row([
             dbc.Col([
@@ -106,7 +107,7 @@ layout = dbc.Container([
                         ])
                     ]
                 )
-            ], lg=6, className="h-100")
+            ], lg=12, className="h-100")
         ], className="py-4")
     ])
 
@@ -138,7 +139,7 @@ def loadDemandCurve(val):
 def loadDemandCurve(val):
     # Filter by generator
     fig = go.Figure()
-    df1 = df_dc[df_dc['Generator_Name'] == val].set_index("Discom_Name")
+    df1 = df_dc[df_dc['Generator_Name'] == val].set_index("parameter")
     df1=df1.drop(columns="Generator_Name")
     # df = df1.groupby(by="Generator_Name").sum()
 
@@ -164,11 +165,19 @@ def loadDemandCurve(val):
     # Build figure
 
 
+
     fig.update_layout(
         title=f"Load Demand Curve for {val}",
-        xaxis_title="Time Block (1–96)",
+        xaxis_title="Block (1–96)",
         yaxis_title="MW",
-        template="plotly_white"
-    )
+        margin=dict(l=0, r=0, t=30, b=50),
 
+        legend=dict(
+            orientation="h",  # horizontal
+            yanchor="bottom",  # anchor legend to bottom
+            y=-0.2,  # push it below plot
+            xanchor="center",
+            x=0.5
+        )
+    )
     return fig

@@ -26,7 +26,7 @@ json_string['standby']=handler.getStandby()
 json_string['interdiscom']=handler.getIntraDiscomTrade()
 # json_string['oa_req']=handler.createMultikeyDictNew(handler.getOAReq(),col=["type","Discom_Name","Generator_Name","Approval_No"])
 json_string['oa_req']=handler.getOAReq().to_dict(orient="records")
-json_string['pmin_intra']=handler.createDict(handler.getPminofIntra(contract_type="intra"))
+json_string['pmin_intra']=handler.createMutliKeyDict(handler.getPminofIntra(contract_type="intra"),col=["Generator_Name","Discom_Name"])
 json_string['pmin_oa']=handler.createMutliKeyDict(handler.getPminofIntra(contract_type="oa"),col=["Generator_Name","Approval_No"])
 #
 json_string['rampup']=handler.createDict(handler.getRamp())

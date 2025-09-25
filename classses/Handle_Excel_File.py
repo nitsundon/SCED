@@ -225,6 +225,12 @@ class HandleExcelFile:
         # Apply contract_type filter if needed
         if contract_type == "intra":
             df = df[df['Approval_No'].isna() | (df['Approval_No'].astype(str).str.strip() == "")]
+            df1=self.getIntraShare()
+            df2=df1.merge(df,on="Generator_Name")
+            for col in range(1, 97):
+                df2[col] = round(df2[col] * df2['share'] / 100, 2)
+            df=df2.copy()
+
 
             df.drop(columns=[ "Approval_No"], inplace=True)
         elif contract_type == "oa":
