@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="Changes:&#10;Changes in home layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classses/Model/getInput.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/Model/getInput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Widgets/Sidebar.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Widgets/Sidebar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,23 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Handle_Excel_File.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Sidebar.executor&quot;: &quot;Run&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.create_ip_json.executor&quot;: &quot;Run&quot;,
-    &quot;Python.getInput.executor&quot;: &quot;Run&quot;,
-    &quot;Python.home.executor&quot;: &quot;Run&quot;,
-    &quot;Python.index.executor&quot;: &quot;Run&quot;,
-    &quot;Python.load_input.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.uploadData.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/niteshdongre/Documents/projects/sced/test&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Handle_Excel_File.executor": "Run",
+    "Python.Sidebar.executor": "Run",
+    "Python.app.executor": "Run",
+    "Python.create_ip_json.executor": "Run",
+    "Python.getInput.executor": "Run",
+    "Python.home.executor": "Run",
+    "Python.index.executor": "Run",
+    "Python.load_input.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.untitled3.executor": "Run",
+    "Python.uploadData.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/niteshdongre/Documents/projects/sced/test"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test" />
@@ -379,7 +382,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758816527641</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Changes:&#10;Changes in home layout">
+      <option name="closed" value="true" />
+      <created>1758864996243</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1758864996243</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Changes:&#10;Changes in home layout">
+      <option name="closed" value="true" />
+      <created>1758865001147</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1758865001147</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

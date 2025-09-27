@@ -175,8 +175,8 @@ class getSingleInput:
                 record.update(values)  # merge Discom_Name, share, MOD_Rate, etc.
                 records.append(record)
 
-                df = pd.DataFrame(records)
-                df1=pd.concat([df,df1]).reset_index(drop=True)
+            df = pd.DataFrame(records)
+            df1=pd.concat([df,df1]).reset_index(drop=True)
 
         return df1
 

@@ -76,6 +76,13 @@ def get_sidebar():
 
                 )
             ),
+            dbc.NavItem(
+                dbc.NavLink(
+                    [html.I(className="fas fa-fw fa-tachometer-alt"), "Utility Insights"],
+                    href="/home",
+
+                )
+            ),
 
             html.Hr(className="sidebar-divider"),
 

@@ -9,7 +9,7 @@ from classses.Model.getInput import getSingleInput
 from classses.graph.home_graphs import HomeGraphs
 import plotly.graph_objs as go
 
-dash.register_page(__name__, path="/", name="Home", order=0)
+dash.register_page(__name__, path="/home", name="Home", order=0)
 db = MongoConnect().getDB()
 hg = HomeGraphs(db)
 
@@ -137,22 +137,7 @@ def loadDemandCurve(val):
     prevent_initial_call=True
 )
 def loadDemandCurve(val):
-    # sankey_data = go.Sankey(
-    #     node=dict(
-    #         pad=15,  # space between nodes
-    #         thickness=20,  # node thickness
-    #         line=dict(color="black", width=0.5),
-    #         label=["Source A", "Source B", "Target X", "Target Y"],
-    #         color=["blue", "green", "orange", "red"]
-    #     ),
-    #     link=dict(
-    #         source=[0, 1, 0, 1 ,2],  # indices of source nodes
-    #         target=[2, 2, 3, 3 ,3],  # indices of target nodes
-    #         value=[4,4,5,-5,9]  # flow values
-    #     )
-    # )
-    #
-    # return  go.Figure(sankey_data)
+
     # Filter by generator
     fig = go.Figure()
     df1 = df_dc[df_dc['Generator_Name'] == val].set_index("parameter")
