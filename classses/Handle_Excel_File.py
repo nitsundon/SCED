@@ -258,3 +258,8 @@ class HandleExcelFile:
         df.drop(columns=["Sl/no"], inplace=True)
         return df
 
+    def getMODSch(self):
+        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="GEN_SCH_DETAILS")
+        df.drop(columns=["Sl/no"], inplace=True)
+        return df
+
