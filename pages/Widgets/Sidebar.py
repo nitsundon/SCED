@@ -1,6 +1,9 @@
 
 import dash_bootstrap_components as dbc
-from dash import html, dcc
+from dash import html, dcc,Input,Output,callback
+
+from classses.ExcelDataProcessor import ExcelDataProcessor
+
 
 def get_topbar():
     return dbc.Navbar(
@@ -13,6 +16,7 @@ def get_topbar():
             #     ]
             # ),
             # Sidebar Toggle (Topbar)
+            html.Button(["RUN SCED"],id="temp_btn"),
             dbc.Button(
                 html.I(className="fa fa-bars"),
                 id="sidebarToggleTop",
@@ -156,3 +160,12 @@ def get_sidebar():
         className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion",
         id="accordionSidebar",
     )
+
+
+@callback(
+    Output("temp_btn","n_clicks"),
+    Input("temp_btn","n_clicks")
+)
+def temp_btn(n):
+    ExcelDataProcessor().createGAMSfile()
+    return 2

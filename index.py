@@ -1,6 +1,6 @@
 import app as app
 import dash
-from dash import html
+from dash import html, Input,Output
 import dash_bootstrap_components as dbc
 from pages.Widgets.Sidebar import get_topbar,get_sidebar
 
@@ -17,3 +17,5 @@ ap.layout = html.Div(
 
 if __name__ == "__main__":
     ap.run(debug=True)
+
+

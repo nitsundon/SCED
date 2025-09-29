@@ -1,0 +1,232 @@
+Index: classses/Handle_Excel_File.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pandas as pd\r\nfrom classses.ConnectionHandler import MongoConnect\r\n\r\n\r\nclass HandleExcelFile:\r\n    def __init__(self, file_path='../data/input.xlsx'):\r\n        df = pd.read_excel(file_path)\r\n        # df.drop(columns=\"Sl/no\",inplace=True)\r\n        # Make sure NaN -> None so Mongo can store them\r\n        df = df.where(pd.notna(df), None)\r\n        # json_string=df.to_dict(orient=\"records\")\r\n        date = df.columns[1]\r\n        revision = df.iloc[0, 1]\r\n        self.ret = {\r\n            'date': date,\r\n            'revision_no': revision,\r\n\r\n        }\r\n\r\n    def getRevision(self):\r\n        db = MongoConnect().getDB()\r\n        revision_collection = db[\"revisions\"]\r\n        result = revision_collection.update_one(self.ret, {\"$setOnInsert\": self.ret}, upsert=True)\r\n        if result.upserted_id:\r\n            # New document inserted\r\n            return result.upserted_id\r\n        else:\r\n            # Document already existed → fetch its _id\r\n            existing = revision_collection.find_one(self.ret, {\"_id\": 1})\r\n            print(existing)\r\n            return existing['_id']\r\n\r\n    def createDict(self,group_object):\r\n        arr={}\r\n        for group_index, group_df in group_object.groupby(\"Generator_Name\"):\r\n            group_df.columns = group_df.columns.map(str)\r\n            arr[group_index] = group_df.drop(columns=\"Generator_Name\").to_dict(orient=\"records\")\r\n\r\n        return arr
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/classses/Handle_Excel_File.py b/classses/Handle_Excel_File.py
+--- a/classses/Handle_Excel_File.py	(revision 588cfb1a48ee163ba72977beb3e2fa12aa7d3bd1)
++++ b/classses/Handle_Excel_File.py	(date 1757937891915)
+@@ -11,6 +11,7 @@
+         # json_string=df.to_dict(orient="records")
+         date = df.columns[1]
+         revision = df.iloc[0, 1]
++        self.file_path=file_path
+         self.ret = {
+             'date': date,
+             'revision_no': revision,
+@@ -30,10 +31,30 @@
+             print(existing)
+             return existing['_id']
+ 
+-    def createDict(self,group_object):
++    def createDict(self,df,col="Generator_Name"):
+         arr={}
+-        for group_index, group_df in group_object.groupby("Generator_Name"):
++        group_object=df.groupby(col)
++        for group_index, group_df in group_object:
+             group_df.columns = group_df.columns.map(str)
+-            arr[group_index] = group_df.drop(columns="Generator_Name").to_dict(orient="records")
++            arr[group_index] = group_df.drop(columns=col).to_dict(orient="records")[0]
++
++        return arr
++
++
++    def CentreSchedule(self,return_type="Discom_Name"):
++        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="CENTRE")
++        if return_type=="Discom_Name":
++            df=df[~(df['Discom_Name']=="Centre")]
++            df.drop(columns="Generator_Name", inplace=True)
++        else:
++            df = df[(df['Discom_Name'] == "Centre")]
++            df.drop(columns="Discom_Name",inplace=True)
++        df.drop(columns="Sl/no", inplace=True)
++        df = df.where(pd.notna(df), None)
++        return df
++    def REMC(self):
++        df = pd.read_excel(self.file_path, skiprows=2, sheet_name="REMC")
++        df.drop(columns="Sl/no", inplace=True)
++        df = df.where(pd.notna(df), None)
++        return df
+ 
+-        return arr
+\ No newline at end of file
+Index: classses/uploadData.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pandas as pd\r\nfrom pymongo.mongo_client import MongoClient\r\nfrom pymongo.server_api import ServerApi\r\nimport certifi\r\nfrom classses.ConnectionHandler import MongoConnect\r\nfrom classses.Handle_Excel_File import HandleExcelFile\r\n\r\njson_string={}\r\n\r\ndf=pd.read_excel('../data/input.xlsx',skiprows=2,sheet_name=\"GEN_DC_DATA\")\r\ndf.drop(columns=\"Sl/no\",inplace=True)\r\n# Make sure NaN -> None so Mongo can store them\r\ndf = df.where(pd.notna(df), None)\r\n\r\nrevision_id=HandleExcelFile(file_path='../data/input.xlsx').getRevision()\r\narr= {}\r\nfor group_index,group_df in df.groupby(\"Generator_Name\"):\r\n    group_df.columns = group_df.columns.map(str)\r\n    arr[group_index]=group_df.drop(columns=\"Generator_Name\").to_dict(orient=\"records\")\r\n\r\n\r\n\r\ndb=MongoConnect().getDB()\r\n\r\ndb['input'].insert_one({'revision':revision_id,'dc':arr})
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/classses/uploadData.py b/classses/uploadData.py
+--- a/classses/uploadData.py	(revision 588cfb1a48ee163ba72977beb3e2fa12aa7d3bd1)
++++ b/classses/uploadData.py	(date 1757937881085)
+@@ -7,19 +7,25 @@
+ 
+ json_string={}
+ 
+-df=pd.read_excel('../data/input.xlsx',skiprows=2,sheet_name="GEN_DC_DATA")
+-df.drop(columns="Sl/no",inplace=True)
+-# Make sure NaN -> None so Mongo can store them
+-df = df.where(pd.notna(df), None)
++# df=pd.read_excel('../data/input.xlsx',skiprows=2,sheet_name="GEN_RAMP_UP_DATA")
++# df.drop(columns="Sl/no",inplace=True)
++# # Make sure NaN -> None so Mongo can store them
++# df = df.where(pd.notna(df), None)
++#
++# revision_id=HandleExcelFile(file_path='../data/input.xlsx').getRevision()
++# arr= {}
++# for group_index,group_df in df.groupby("Generator_Name"):
++#     group_df.columns = group_df.columns.map(str)
++#     arr[group_index]=group_df.drop(columns="Generator_Name").to_dict(orient="records")
++
+ 
++
++df=HandleExcelFile().REMC()
++
++arr=HandleExcelFile().createDict(df,col="Discom_Name")
+ revision_id=HandleExcelFile(file_path='../data/input.xlsx').getRevision()
+-arr= {}
+-for group_index,group_df in df.groupby("Generator_Name"):
+-    group_df.columns = group_df.columns.map(str)
+-    arr[group_index]=group_df.drop(columns="Generator_Name").to_dict(orient="records")
+-
+-
+ 
+ db=MongoConnect().getDB()
+ 
+-db['input'].insert_one({'revision':revision_id,'dc':arr})
+\ No newline at end of file
++db['input'].update_one({'revision':revision_id},{'$set':{'remc':arr}},upsert=True)
++
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"9a7735d2-1d66-4c85-93a3-f46118bc916d\" name=\"Changes\" comment=\"Dash with bootstrap setup\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/github.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/github.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/classses/Handle_Excel_File.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/classses/Handle_Excel_File.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/requirements.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/requirements.txt\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"32cwI57mkpST3qYlaW360rslIVM\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Python.Handle_Excel_File.executor\": \"Run\",\r\n    \"Python.Sidebar.executor\": \"Run\",\r\n    \"Python.app.executor\": \"Run\",\r\n    \"Python.create_ip_json.executor\": \"Run\",\r\n    \"Python.home.executor\": \"Run\",\r\n    \"Python.index.executor\": \"Run\",\r\n    \"Python.main.executor\": \"Run\",\r\n    \"Python.uploadData.executor\": \"Run\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"last_opened_file_path\": \"/Users/niteshdongre/Documents/projects/sced/test\",\r\n    \"settings.editor.selected.configurable\": \"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/test\" />\r\n      <recent name=\"$PROJECT_DIR$/assets\" />\r\n      <recent name=\"$PROJECT_DIR$/data\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"index\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"github\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/index.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.index\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-53e2683a6804-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26094.141\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"9a7735d2-1d66-4c85-93a3-f46118bc916d\" name=\"Changes\" comment=\"\" />\r\n      <created>1757733085327</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1757733085327</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial Commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757734918940</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757734918940</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Requirement Update\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757735374783</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757735374783</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Requirement Update\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757735381604</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757735381604</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Requirement Update\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757735468961</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757735468961</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Sunburst Plot Trial\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757759328925</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757759328925</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Sunburst Plot with Rate Bin Trial\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757760139441</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757760139441</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"create_sunburst.py created\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757760581556</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757760581556</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"create_sunburst.py created\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757761484552</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757761484552</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Dash with bootstrap setup\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757796589584</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757796589584</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Dash with bootstrap setup\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757796609888</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757796609888</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Dash with bootstrap setup\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1757797306817</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1757797306817</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"12\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Initial Commit\" />\r\n    <MESSAGE value=\"Requirement Update\" />\r\n    <MESSAGE value=\"Sunburst Plot Trial\" />\r\n    <MESSAGE value=\"Sunburst Plot with Rate Bin Trial\" />\r\n    <MESSAGE value=\"create_sunburst.py created\" />\r\n    <MESSAGE value=\"Dash with bootstrap setup\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Dash with bootstrap setup\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 588cfb1a48ee163ba72977beb3e2fa12aa7d3bd1)
++++ b/.idea/workspace.xml	(date 1757936362338)
+@@ -4,13 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="Dash with bootstrap setup">
+-      <change beforePath="$PROJECT_DIR$/.idea/github.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/github.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++    <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="Data upload file creation">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/classses/Handle_Excel_File.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/Handle_Excel_File.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/classses/uploadData.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/uploadData.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -23,10 +20,25 @@
+         <option value="Python Script" />
+       </list>
+     </option>
++  </component>
++  <component name="Git.Rebase.Settings">
++    <option name="NEW_BASE" value="origin/main" />
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
++  "lastFilter": {
++    "state": "OPEN",
++    "assignee": "nitsundon"
++  }
++}]]></component>
++  <component name="GithubPullRequestsUISettings"><![CDATA[{
++  "selectedUrlAndAccountId": {
++    "url": "https://github.com/nitsundon/SCED.git",
++    "accountId": "e8a9f56b-ff93-45e1-a3fd-29c1d2fdf84e"
++  }
++}]]></component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 7
+ }</component>
+@@ -60,6 +72,9 @@
+       <recent name="$PROJECT_DIR$/assets" />
+       <recent name="$PROJECT_DIR$/data" />
+     </key>
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="E:\Work\SCED\PythonProject1\SCED\classses" />
++    </key>
+   </component>
+   <component name="RunManager">
+     <configuration name="index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+@@ -194,9 +209,56 @@
+       <option name="project" value="LOCAL" />
+       <updated>1757797306817</updated>
+     </task>
+-    <option name="localTasksCounter" value="12" />
++    <task id="LOCAL-00012" summary="Dash with bootstrap setup">
++      <option name="closed" value="true" />
++      <created>1757932156123</created>
++      <option name="number" value="00012" />
++      <option name="presentableId" value="LOCAL-00012" />
++      <option name="project" value="LOCAL" />
++      <updated>1757932156123</updated>
++    </task>
++    <task id="LOCAL-00013" summary="Dash with bootstrap setup">
++      <option name="closed" value="true" />
++      <created>1757932179221</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1757932179221</updated>
++    </task>
++    <task id="LOCAL-00014" summary="Data upload file creation">
++      <option name="closed" value="true" />
++      <created>1757932360197</created>
++      <option name="number" value="00014" />
++      <option name="presentableId" value="LOCAL-00014" />
++      <option name="project" value="LOCAL" />
++      <updated>1757932360197</updated>
++    </task>
++    <option name="localTasksCounter" value="15" />
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="origin/main" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Initial Commit" />
+     <MESSAGE value="Requirement Update" />
+@@ -204,6 +266,7 @@
+     <MESSAGE value="Sunburst Plot with Rate Bin Trial" />
+     <MESSAGE value="create_sunburst.py created" />
+     <MESSAGE value="Dash with bootstrap setup" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Dash with bootstrap setup" />
++    <MESSAGE value="Data upload file creation" />
++    <option name="LAST_COMMIT_MESSAGE" value="Data upload file creation" />
+   </component>
+ </project>
+\ No newline at end of file

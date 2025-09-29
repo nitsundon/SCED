@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="Changes:&#10;output of GAMS">
+    <list default="true" id="9a7735d2-1d66-4c85-93a3-f46118bc916d" name="Changes" comment="added routine">
+      <change afterPath="$PROJECT_DIR$/Routine/GAMS/sced.gdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classses/ExcelDataProcessor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/github.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/github.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classses/Handle_Excel_File.py" beforeDir="false" afterPath="$PROJECT_DIR$/classses/Handle_Excel_File.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Widgets/Sidebar.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Widgets/Sidebar.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +54,15 @@
     "Python.uploadData.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/niteshdongre/Documents/projects/sced/test"
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Work/SCED/PythonProject1/SCED/Routine/GAMS"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Work\SCED\PythonProject1\SCED\Routine\GAMS" />
+      <recent name="E:\Work\SCED\PythonProject1\SCED\classses" />
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/data" />
@@ -69,7 +78,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -412,7 +420,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758997398665</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="added routine">
+      <option name="closed" value="true" />
+      <created>1759139480006</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1759139480006</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -449,6 +465,18 @@
     <MESSAGE value="Changes:&#10;Changes in home layout" />
     <MESSAGE value="Changes:&#10;Changes in layout" />
     <MESSAGE value="Changes:&#10;output of GAMS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes:&#10;output of GAMS" />
+    <MESSAGE value="added routine" />
+    <option name="LAST_COMMIT_MESSAGE" value="added routine" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pages/Widgets/Sidebar.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
